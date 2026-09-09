@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iPhoneの定型文入力アプリ｜LikeAssistの自由入力ルール</title>
+<meta name="description" content="LikeAssistの自由入力ルールは、入力欄の目印となる文字と入れたい内容を登録し、Webフォームへの入力を支援する機能です。完全一致／含む、対象ドメイン、有効／無効を設定できます。">
+<link rel="canonical" href="https://ats-spec.github.io/likeassist-support/teikeibun.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iPhoneの定型文入力アプリ｜LikeAssistの自由入力ルール">
+<meta property="og:description" content="入力欄の目印となる文字と、入れたい内容を登録。いつもの文章をワンタップで入力できます。">
+<meta property="og:url" content="https://ats-spec.github.io/likeassist-support/teikeibun.html">
+<meta property="og:image" content="https://ats-spec.github.io/likeassist-support/assets/custom-autofill.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"パスワードや決済情報も自動入力できますか？",
+     "acceptedAnswer":{"@type":"Answer","text":"対応していません。パスワード・認証コード・決済情報は自由入力ルールやテンプレートにも登録しないことを推奨しています。"}},
+    {"@type":"Question","name":"入力済みの欄は上書きされますか？",
+     "acceptedAnswer":{"@type":"Answer","text":"上書きしません。空欄になっている入力欄にのみ記入します。フォームの送信は利用者自身が行います。"}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">L</span>LikeAssist</a>
+    <nav aria-label="主要メニュー">
+      <a href="kensaku.html">ページ内検索</a>
+      <a href="teikeibun.html">定型文・入力</a>
+      <a href="pokepara.html">ポケパラ</a>
+      <a href="ryokin.html">料金</a>
+      <a href="support.html">サポート</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap" style="padding-bottom:24px;">
+    <div class="hero-copy">
+      <p class="crumb"><a href="index.html">ホーム</a> ／ 定型文・自由入力ルール</p>
+      <p class="eyebrow">iPhone 定型文入力</p>
+      <h1>いつもの文章を、<br><span class="marker-swatch">いつもの入力位置へ</span>。</h1>
+      <p class="lead">入力欄の目印となる文字と、入れたい内容を登録できます。会社名や会員番号など、よく入力する内容を一度登録すれば、対象の入力欄にワンタップで入力できます。</p>
+      <div class="actions">
+        <a class="button primary" href="#rules">ルールの設定方法を見る ↓</a>
+        <a class="button secondary" href="ryokin.html">無料枠を確認する</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="phone-frame">
+        <div class="shell"><img src="assets/custom-autofill.jpg" alt="自由入力ルールの設定画面。入力欄のワード、内容、対象サイトを設定できる" width="1284" height="2778"></div>
+      </div>
+      <p class="phone-caption">実際のアプリ画面・自由入力ルールの設定例</p>
+    </div>
+  </section>
+
+  <section class="section wrap" id="rules">
+    <div class="section-heading">
+      <p class="eyebrow">HOW IT WORKS</p>
+      <h2>自由入力ルールでできること</h2>
+    </div>
+    <div class="grid-4">
+      <div class="step"><span>目印</span><h3>入力欄を識別</h3><p>ラベルなどの文字で、どの入力欄かを判定します。</p></div>
+      <div class="step"><span>内容</span><h3>入れたい内容</h3><p>会社名や住所など、繰り返し使う文章を登録します。</p></div>
+      <div class="step"><span>条件</span><h3>完全一致／含む</h3><p>入力欄の目印に対する一致条件を選べます。</p></div>
+      <div class="step"><span>範囲</span><h3>対象ドメイン</h3><p>未指定なら対象となるHTTPSサイト全般に適用されます。</p></div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="section-heading">
+      <p class="eyebrow">基本ルール</p>
+      <h2>安心して使うための決まりごと</h2>
+    </div>
+    <div class="grid-3">
+      <div class="safety-item"><h3>上書きしない</h3><p>すでに入力済みの欄には記入しません。空欄の入力欄にのみ反映されます。</p></div>
+      <div class="safety-item"><h3>送信は自分で</h3><p>フォームの送信ボタンは利用者自身が押します。自動送信は行いません。</p></div>
+      <div class="safety-item"><h3>機密情報は対象外</h3><p>パスワード・認証コード・決済情報は自動入力に対応していません。これらをルールに登録しないでください。</p></div>
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="section-heading"><p class="eyebrow">Free / Pro</p><h2>枠数の違い</h2></div>
+    <table class="plan-table">
+      <thead><tr><th>項目</th><th>無料</th><th class="pro">Pro</th></tr></thead>
+      <tbody>
+        <tr><td>自由入力ルール</td><td>1枠</td><td class="pro">合計5枠</td></tr>
+        <tr><td>基本の自動入力（氏名・住所など）</td><td colspan="2" class="pro">両プランで利用可</td></tr>
+        <tr><td>テンプレート</td><td colspan="2" class="pro">両プランで利用可</td></tr>
+      </tbody>
+    </table>
+    <p class="plan-note">Pro解約後も追加設定の内容は保存され、無料で使う1枠を選べます。複数のルールが一致した場合は選択して入力します。</p>
+  </section>
+
+  <section class="section wrap">
+    <div class="section-heading"><p class="eyebrow">Related</p><h2>あわせて見られています</h2></div>
+    <ul class="related-list">
+      <li><a href="kensaku.html">ページ内検索<small>登録した文字を含むボタン・リンクを探す</small></a></li>
+      <li><a href="ryokin.html">料金・無料とProの違い<small>自由入力ルールの枠数を比較</small></a></li>
+      <li><a href="support.html">サポート・使い方ガイド<small>設定手順を画面付きで確認</small></a></li>
+    </ul>
+  </section>
+
+  <p class="notice wrap">LikeAssistは第三者Webサービスの公式アプリではありません。</p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 LikeAssist</p>
+    <nav aria-label="フッターメニュー">
+      <a href="support.html">サポート</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
