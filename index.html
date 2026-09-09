@@ -7,8 +7,9 @@
   <meta name="theme-color" content="#ff8400">
   <title>LikeAssist | Web検索・入力をもっと快適に</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="landing.css">
 </head>
-<body>
+<body class="product-page">
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="LikeAssist トップ"><span class="brand-mark" aria-hidden="true">L</span>LikeAssist</a>
     <nav aria-label="主要メニュー">
@@ -22,19 +23,21 @@
   <main class="landing">
     <section class="hero marketing-hero">
       <div class="hero-copy">
-        <p class="eyebrow">Web検索・入力支援アプリ</p>
-        <h1>探す、開く、入力する。<br><span>毎日のWeb操作を軽やかに。</span></h1>
-        <p class="lead">LikeAssistは、ページ内検索、よく使うサイトの整理、定型文や基本情報の入力を、ひとつの画面で支援するiPhoneアプリです。</p>
+        <p class="eyebrow">YOUR WEB. YOUR WAY.</p>
+        <h1>いつものWebに、<br>あなたの<span>近道</span>を。</h1>
+        <p class="hero-promise">探す手間も、入力の繰り返しも。<br>毎日の「ちょっと面倒」を、ひとつのアプリで。</p>
+        <p class="lead">ページ内検索・サイト整理・入力支援をまとめたiPhoneアプリ、LikeAssist。</p>
         <div class="actions">
-          <a class="button primary" href="#features">できることを見る</a>
-          <a class="button secondary" href="support.html">使い方を確認</a>
+          <a class="button primary" href="#features">使い方をイメージする ↓</a>
+          <a class="button secondary" href="#plans">無料でできること ↗</a>
         </div>
         <p class="availability"><span aria-hidden="true">●</span> App Storeで公開準備中</p>
       </div>
-      <div class="hero-visual" aria-label="LikeAssistのページ内検索画面">
-        <div class="phone phone-main"><img src="assets/web-search.jpg" alt="LikeAssistでGoogleを表示し、ページ内検索を使っている画面" width="1284" height="2778"></div>
-        <div class="float-card float-search"><span>⌕</span><strong>ページ内を検索</strong><small>候補へすばやく移動</small></div>
-        <div class="float-card float-safe"><span>✓</span><strong>操作は自分で確認</strong><small>自動送信はしません</small></div>
+      <div class="hero-visual" aria-label="LikeAssistの自由入力ルール設定画面">
+        <p class="board-label">MAKE THE EVERYDAY EASIER</p>
+        <div class="phone phone-main"><img src="assets/custom-autofill.jpg" alt="LikeAssistで入力欄のワードと入力内容を登録する設定画面" width="1284" height="2778" fetchpriority="high"></div>
+        <div class="float-card float-safe"><span>Aa</span><strong>いつもの入力を、自分仕様に。</strong><small>入力欄のワードと、入れたい内容を登録。</small></div>
+        <p class="screen-caption">実際のアプリ画面 · 自由入力ルール</p>
       </div>
     </section>
 
@@ -46,24 +49,25 @@
 
     <section id="features" class="section feature-intro">
       <div class="section-heading">
-        <p class="eyebrow">Features</p>
-        <h2>Webを使うときの、小さな手間をまとめて解決</h2>
+        <p class="eyebrow">LESS FRICTION, MORE FLOW</p>
+        <h2>そのひと手間、<br>毎回くり返さなくていい。</h2>
         <p>特定サイトに限らず、普段使うさまざまなWebページで利用できます。</p>
       </div>
       <div class="feature-grid">
-        <article class="feature-card featured"><span class="feature-icon" aria-hidden="true">⌕</span><h3>ページ内検索</h3><p>設定した文字を含むボタンやリンクを探し、候補へ順番に移動。複数候補は1周を1検索として数えます。</p></article>
-        <article class="feature-card"><span class="feature-icon" aria-hidden="true">☆</span><h3>サイトを整理</h3><p>サイトごとの検索設定、開始ページ、お気に入りを登録。必要なページへ迷わず戻れます。</p></article>
-        <article class="feature-card"><span class="feature-icon" aria-hidden="true">Aa</span><h3>文章入力を支援</h3><p>テンプレートを入力位置へ挿入。氏名や住所などは、利用者がボタンを押したときだけ空欄へ入力します。</p></article>
-        <article class="feature-card"><span class="feature-icon" aria-hidden="true">＋</span><h3>自由入力ルール</h3><p>入力欄の目印と入れたい内容を登録。完全一致／含む、対象サイト、有効／無効を細かく設定できます。</p></article>
+        <article class="feature-card featured"><span class="feature-icon" aria-hidden="true">01</span><p class="pain">「あのボタン、どこだっけ？」</p><h3>スクロールで探す前に、<br>文字から見つける。</h3><p>設定した文字を含むボタンやリンクへ移動。候補が複数あっても、順番に確認できます。</p><div class="example"><small>検索の説明例</small><strong>「お問い合わせ」 → 一致するリンクへ</strong></div></article>
+        <article class="feature-card"><span class="feature-icon" aria-hidden="true">02</span><p class="pain">「サイトのたびに設定し直すのは面倒」</p><h3>よく使うサイトには、<br>よく使う設定を。</h3><p>検索文字やボタン名をサイトごとに保存。お気に入りや起動時のページ設定で、次に開くときもスムーズに。</p></article>
+        <article class="feature-card"><span class="feature-icon" aria-hidden="true">03</span><p class="pain">「また同じ文章を入力している」</p><h3>いつもの文章を、<br>いつもの入力位置へ。</h3><p>テンプレートを保存し、入力位置へ挿入。氏名や住所などの基本情報は、ボタンを押したときだけ空欄へ入力します。</p></article>
+        <article class="feature-card"><span class="feature-icon" aria-hidden="true">04</span><p class="pain">「この入力も、覚えておいてほしい」</p><h3>入力欄に合わせて、<br>自分だけのルールを。</h3><p>入力欄の目印と入れたい内容を登録。完全一致／含む、対象サイト、有効／無効を設定できます。</p></article>
       </div>
     </section>
 
     <section class="section showcase">
       <div class="showcase-copy">
         <p class="eyebrow">Your rules</p>
-        <h2>サイトに合わせて、入力ルールを自分仕様に</h2>
+        <h2>同じことを、<br>何度も打たない。</h2>
         <p>会社名や会員番号など、よく入力する内容を登録できます。入力済みの欄は上書きせず、パスワード・決済情報・認証欄は対象外です。</p>
         <ul class="check-list"><li>無料で自由入力ルール1枠</li><li>Proなら合計5枠</li><li>複数ルールが一致した場合は選択して入力</li></ul>
+        <a class="button secondary" href="support.html">詳しい操作方法を見る ↗</a>
       </div>
       <div class="phone phone-detail"><img src="assets/custom-autofill.jpg" alt="自由入力ルールの設定画面。入力欄のワード、内容、対象サイトを設定できる" width="1284" height="2778" loading="lazy"></div>
     </section>
@@ -75,13 +79,7 @@
         <p>自分の過去ブログから反応したユーザー情報を取り込み、月間・累計ランキングとして確認できます。同じブログの同じ反応は重複登録されません。</p>
         <p class="small-note">ランキング・反応集計は無料プランでも利用できます。LikeAssistはポケパラの公式アプリではありません。</p>
       </div>
-      <div class="mini-dashboard" aria-label="反応集計のイメージ">
-        <div class="dashboard-title"><span>🏆</span><strong>自分専用ランキング</strong></div>
-        <div class="rank-row"><b>1</b><span>よく反応してくれる人</span><strong>24</strong></div>
-        <div class="rank-row"><b>2</b><span>最近反応してくれた人</span><strong>18</strong></div>
-        <div class="rank-row"><b>3</b><span>継続して反応してくれる人</span><strong>15</strong></div>
-        <small>表示例。実際の記録は利用者の端末内に保存されます。</small>
-      </div>
+      <div class="reaction-flow"><p class="eyebrow">自分の記録を振り返る</p><ol><li>自分の過去ブログを開く</li><li>反応したユーザー情報を取り込む</li><li>月間・累計のランキングを確認</li></ol><small>ポケパラ公式の総合ランキングではありません。</small></div>
     </section>
 
     <section id="plans" class="section plans-section">
@@ -90,21 +88,21 @@
         <article class="plan-card"><p class="plan-label">Free</p><h3>無料プラン</h3><p class="plan-price">¥0</p><ul class="check-list"><li>ページ内検索 1日10回</li><li>サイトプロファイル 3件</li><li>各サイトの検索ボタン 1件</li><li>自由入力ルール 1枠</li><li>基本の自動入力・テンプレート</li></ul></article>
         <article class="plan-card pro-card"><p class="plan-label">Pro</p><h3>LikeAssist Pro</h3><p class="plan-price">月額 ¥900<small>自動更新</small></p><ul class="check-list"><li>ページ内検索 1日100回</li><li>サイトプロファイル 20件</li><li>各サイトの検索ボタン 5件</li><li>自由入力ルール 5枠</li><li>解約後も追加設定の内容を保存</li></ul></article>
       </div>
-      <div class="plan-screen-wrap">
-        <div><h3>利用状況はアプリ内ですぐ確認</h3><p>検索回数やプラン状態を設定画面に表示。購入の確認・管理も同じ場所から行えます。</p></div>
-        <div class="phone phone-plan"><img src="assets/plan-status.jpg" alt="LikeAssistのプランと利用状況を確認する画面" width="1284" height="2778" loading="lazy"></div>
-      </div>
+      <p class="plan-note">検索候補1周で1回、候補0件は回数に含みません。基本の自動入力・テンプレート・ポケパラのランキング／反応集計は両プランで利用できます。日本の価格です。購入時はアプリ内の表示をご確認ください。</p>
+      <a class="button primary plan-link" href="#start">はじめ方を確認する ↗</a>
     </section>
 
     <section class="section safety-section">
       <div><p class="eyebrow">Privacy &amp; control</p><h2>入力も操作も、利用者の確認を大切に</h2></div>
       <div class="safety-grid">
-        <article><span aria-hidden="true">▣</span><h3>端末内に保存</h3><p>設定、履歴、ランキングなどのアプリデータは端末内に保存します。</p></article>
+        <article><span aria-hidden="true">▣</span><h3>端末内に保存</h3><p>設定、履歴、ランキングなどのアプリデータは端末内に保存します。閲覧先サイトとの通信は発生します。</p></article>
         <article><span aria-hidden="true">☝</span><h3>明示的に操作</h3><p>自動入力はボタンを押したときだけ。フォームを勝手に送信しません。</p></article>
         <article><span aria-hidden="true">⌁</span><h3>サイトのルールを尊重</h3><p>各Webサービスの利用規約やルールを確認してご利用ください。</p></article>
       </div>
     </section>
 
+    <section id="start" class="section start-section"><p class="eyebrow">GET READY IN THREE STEPS</p><h2>使いはじめは、シンプルに。</h2><p>App Store公開後は、次の手順でご利用いただけます。</p><ol class="start-steps"><li><span>01</span><h3>Webページを開く</h3><p>URLを入力するか、お気に入りから使いたいページを開きます。</p></li><li><span>02</span><h3>自分の設定を登録</h3><p>探す文字や入力内容を設定。使う機能から少しずつで大丈夫です。</p></li><li><span>03</span><h3>ボタンで操作</h3><p>候補への移動や空欄への入力を支援。最後は自分で内容を確認します。</p></li></ol><a class="button primary" href="support.html">操作ガイドを読む ↗</a></section>
+    <section class="section faq-section"><div><p class="eyebrow">GOOD TO KNOW</p><h2>気になること、<br>先に確認。</h2></div><div><details><summary>どのサイトでも使えますか？</summary><p>さまざまなWebサイトが対象ですが、構造や制限によって動作しない場合があります。ページ内検索はボタン・リンクが対象です。ランキング・反応集計はポケパラ専用です。</p></details><details><summary>いいねやフォーム送信を自動で行いますか？</summary><p>行いません。検索は一致するボタンやリンクへの移動を支援します。自動入力も利用者がボタンを押したときに行い、送信操作は利用者自身で行います。</p></details><details><summary>パスワードやカード情報も入力できますか？</summary><p>これらの自動入力には対応していません。パスワード・認証コード・決済情報は、自由入力ルールやテンプレートにも登録しないでください。必要に応じて外部ブラウザを利用できます。</p></details><details><summary>Proを解約すると設定は消えますか？</summary><p>追加設定の内容も保存されます。無料枠を超える部分は利用が制限され、再開すると再び利用できます。自由入力ルールは無料で使用する1枠を選べます。</p></details><details><summary>どこからダウンロードできますか？</summary><p>現在はApp Store公開準備中です。公開後、このページにダウンロードへのリンクを掲載します。</p></details></div></section>
     <section class="section final-cta">
       <p class="eyebrow">LikeAssist</p><h2>よく使うWebページを、もっと使いやすく。</h2><p>App Store公開に向けて準備中です。操作方法やご質問はサポートページをご覧ください。</p>
       <div class="actions"><a class="button primary" href="support.html">使い方・よくある質問</a><a class="button secondary" href="mailto:ats.apphelp@gmail.com">お問い合わせ</a></div>
