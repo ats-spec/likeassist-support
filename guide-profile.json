@@ -1,0 +1,10 @@
+{
+  "format": "likeassist-profile",
+  "version": 1,
+  "profile": {
+    "name": "使い方",
+    "host": "ats-spec.github.io",
+    "startUrl": "https://ats-spec.github.io/likeassist-support/guide.html",
+    "finderActions": [{ "label": "位置を検索", "termsText": "お問い合わせ", "enabled": true }]
+  }
+}

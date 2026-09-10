@@ -1,0 +1,15 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>プロファイル共有 | LikeAssist</title><meta name="description" content="自分で作った検索プロファイルを保存し、GitHubやファイルから読み込む手順。"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"></head><body><header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">L</span>LikeAssist</a>
+    <nav aria-label="主要メニュー">
+      <a href="kensaku.html">ページ内検索</a>
+      <a href="teikeibun.html">定型文・入力</a>
+      <a href="profiles.html">設定を共有</a>
+      <a href="ryokin.html">料金</a>
+      <a href="support.html">サポート</a>
+    </nav>
+  </div>
+</header><main class="document"><p class="eyebrow">PROFILE SHARING</p><h1>自分の設定を、保存・共有。</h1><p class="lead">共有するのは検索設定だけ。読み込む前に内容を確認できます。</p><h2>1. アプリから保存</h2><ol><li>「設定 → サイト・検索設定」で共有したいサイトを選択します。</li><li>「書き出す」を押し、共有内容の注意を確認します。</li><li>端末の「ファイルに保存」などを選び、JSONファイルを保存します。</li></ol><p>サイト名、対象ドメイン、開始URLのパス、検索ボタン名・検索文字・ON/OFFが含まれます。自動入力の個人情報、テンプレート、閲覧履歴、購入情報は含みません。ただし検索文字やURL自体に秘密の情報が含まれていないか確認してください。</p><h2>2. 自分のGitHubで共有</h2><ol><li>ご自身のGitHubの公開リポジトリを開きます。</li><li>「Add file → Upload files」で保存したJSONを選び、変更を保存します。</li><li>公開したファイルのページURLをコピーして共有します。</li></ol><p>GitHubアカウントへのログイン・ファイル投稿はGitHubで行います。アプリから直接投稿はしません。公開した情報は誰でも閲覧できるため、公開先の管理と削除はご自身で行ってください。</p><h2>3. 確認して読み込む</h2><ol><li>アプリの「設定 → サイト・検索設定 → プロファイルを共有・読み込み」を開きます。</li><li>「保存したJSONファイルを読み込む」、またはGitHub URLを貼り付けて「URLから読み込む」を選びます。</li><li>サイト名・ドメイン・開始URL・検索文字を確認して保存します。同じドメインの設定がある場合は置き換わります。</li></ol><p>対応するURLはGitHubのファイルページ、raw.githubusercontent.com、GitHub Pagesです。ファイルは64KB以下・形式バージョン1。読み込んでもサイトを自動で開いたり、クリックしたりはしません。</p><h2>練習用プロファイル</h2><p><a class="button primary" href="guide-profile.json" download>使い方ページ用のJSONを保存</a></p><p>アプリのURL読み込み欄には、次のURLをコピーしてください。</p><p style="overflow-wrap:anywhere">https://ats-spec.github.io/likeassist-support/guide-profile.json</p><h2>無料・Proの上限</h2><p>無料は3サイト・各1検索ボタン、Proは20サイト・各5検索ボタンです。読み込みも同じ上限が適用されます。上限を超えるファイルは、内容を減らすかプランを変更してから再度読み込んでください。</p><p><a href="guide.html">使い方へ戻る</a> · <a href="privacy.html">プライバシーポリシー</a></p></main></body></html>

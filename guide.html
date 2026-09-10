@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>使い方と練習 | LikeAssist</title><meta name="description" content="LikeAssistの検索・テンプレート・プロファイル共有を練習できます。"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><style>label{display:block;margin-top:1rem}input,textarea{font:inherit;width:100%;padding:.8rem;border:1px solid #888;border-radius:8px}textarea{min-height:130px}section{margin:2rem 0}button{font:inherit;padding:.8rem 1rem;cursor:pointer} .practice{padding:1.2rem;border:2px solid #ff8400;border-radius:12px}</style></head>
+<body><header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">L</span>LikeAssist</a>
+    <nav aria-label="主要メニュー">
+      <a href="kensaku.html">ページ内検索</a>
+      <a href="teikeibun.html">定型文・入力</a>
+      <a href="profiles.html">設定を共有</a>
+      <a href="ryokin.html">料金</a>
+      <a href="support.html">サポート</a>
+    </nav>
+  </div>
+</header>
+<main class="document"><p class="eyebrow">START HERE</p><h1>いつものWebを、使いやすく。</h1><p class="lead">このページで検索と入力を練習できます。アプリの登録・ログインは不要です。</p>
+<section><h2>1. ページ内を検索</h2><p>アプリ下部の「位置を検索」を押してみてください。初期設定の検索文字「お問い合わせ」に一致するボタンへ移動します。複数候補は押すたびに順番に移動し、1周を1検索として数えます。0件は数えません。ボタンを勝手に押したり送信したりはしません。</p><p>検索文字は「☰ → 設定 → サイト・検索設定」で変更できます。</p><a class="button primary" href="#practice">お問い合わせの練習へ</a></section>
+<section><h2>2. テンプレートを挿入</h2><ol><li>「☰ → テンプレートを使う」で一覧を開きます。</li><li>下の「メッセージ」欄をタップし、入力位置を選びます。</li><li>フロート一覧から文章を選ぶと入力されます。一覧は開いたままです。</li><li>再度「テンプレート」を押すか「格納」で一覧を閉じます。</li></ol><p>文章は「設定 → テンプレート」で編集できます。パスワード・認証コード・決済情報は保存しないでください。</p></section>
+<section id="practice" class="practice"><h2>練習用の入力欄</h2><p>送信機能はありません。入力内容はこのページから保存・送信しません。架空の情報で試してください。</p><label for="company">会社名</label><input id="company" type="text" autocomplete="off" placeholder="例：サンプル会社"><label for="message">メッセージ</label><textarea id="message" placeholder="ここをタップしてテンプレートを選択"></textarea><p><button type="button" id="contact">お問い合わせ（練習）</button></p><p id="feedback" role="status"></p></section>
+<section><h2>3. 自動入力を試す</h2><p>設定の「自動入力」で自由入力ルールを作り、ワードを「会社名」、内容を「サンプル会社」にします。このページで「自動入力」を押すと空欄に入力します。入力済みの欄は上書きしません。対象サイトを設定すると、そのサイトだけで使用できます。</p></section>
+<section><h2>4. 検索設定を保存・共有</h2><p>設定の「サイト・検索設定」でサイトを作成します。自動追加はしません。作成したプロファイルはファイルへ書き出し、GitHubに保存したURLや端末のファイルから読み込めます。</p><a class="button primary" href="profiles.html">プロファイル共有の手順へ</a></section>
+<section><h2>操作バーと起動ページ</h2><p>「☰ → ブラウザ上の表示をカスタマイズ」で表示を切り替えます。戻る・検索・再読込は初期状態でON、再読込は検索の行の右端です。起動先は設定から変更できます。この版への更新時は、一度だけ使い方ページへ切り替わります。</p></section>
+<p>サイトの構造によって入力・検索に対応しない場合があります。読み込み中は完了後に検索し、画像による位置ずれを一定時間補正します。手動操作すると補正は止まります。</p><p><a href="support.html">困ったときはこちら</a></p></main><footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 LikeAssist</p>
+    <nav aria-label="フッターメニュー">
+      <a href="guide.html">使い方</a>
+      <a href="support.html">サポート</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+    </nav>
+  </div>
+</footer><script>document.getElementById('contact').addEventListener('click',()=>{document.getElementById('feedback').textContent='ボタンを確認できました。送信は行っていません。';});</script></body></html>

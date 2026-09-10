@@ -1,0 +1,252 @@
+/* LikeAssist — marketing site
+   Design tokens ------------------------------------------------------- */
+:root{
+  --paper:  #F5F6EE;
+  --paper-dim: #EEEFE3;
+  --ink:    #22261D;
+  --muted:  #63665A;
+  --marker: #D7E869;
+  --marker-ink: #4B5326;
+  --indigo: #2B3357;
+  --indigo-ink: #EDEFF6;
+  --clay:   #C6512E;
+  --line:   #DBDCCB;
+  --white:  #FFFFFF;
+  --radius: 14px;
+  --maxw: 1080px;
+}
+
+*{ box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+body{
+  margin:0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4{
+  font-family: "Zen Maru Gothic", "Noto Sans JP", sans-serif;
+  color: var(--ink);
+  line-height: 1.45;
+  margin: 0 0 .6em;
+}
+h1{ font-weight: 900; }
+h2{ font-weight: 700; }
+h3{ font-weight: 700; }
+
+p{ margin: 0 0 1em; color: var(--ink); }
+a{ color: var(--indigo); text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+a:hover{ color: var(--clay); }
+
+img{ max-width:100%; display:block; }
+
+.wrap{ max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+
+/* Marker-stroke visual motif ------------------------------------------ */
+.marker-swatch{
+  display:inline-block;
+  padding: .08em .35em;
+  background: linear-gradient(180deg, transparent 55%, var(--marker) 55%);
+}
+.marker-tag{
+  display:inline-flex; align-items:center; gap:.4em;
+  font-size: .82rem; font-weight:700; color: var(--marker-ink);
+  background: var(--marker); padding: .25em .7em; border-radius: 999px;
+  letter-spacing: .02em;
+}
+
+/* Header ---------------------------------------------------------------*/
+.site-header{
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+  position: sticky; top:0; z-index: 50;
+}
+.site-header .wrap{
+  display:flex; align-items:center; justify-content:space-between;
+  padding-top: 16px; padding-bottom: 16px;
+}
+.brand{
+  display:flex; align-items:center; gap:.5em;
+  font-family:"Zen Maru Gothic", sans-serif; font-weight:900; font-size:1.2rem;
+  color: var(--ink); text-decoration:none;
+}
+.brand-mark{
+  width: 30px; height:30px; border-radius: 9px;
+  background: var(--indigo); color:#fff;
+  display:flex; align-items:center; justify-content:center;
+  font-family:"Zen Maru Gothic",sans-serif; font-weight:900; font-size:1rem;
+  position:relative;
+}
+.brand-mark::after{
+  content:""; position:absolute; left:5px; right:5px; bottom:5px; height:5px;
+  background: var(--marker); border-radius: 2px;
+}
+.site-header nav{ display:flex; gap: 1.6em; flex-wrap: wrap; }
+.site-header nav a{
+  color: var(--ink); text-decoration:none; font-size:.92rem; font-weight:500;
+  border-bottom: 2px solid transparent; padding-bottom: 2px;
+}
+.site-header nav a:hover{ border-color: var(--marker); color: var(--ink); }
+.nav-toggle{ display:none; }
+
+/* Buttons ---------------------------------------------------------------*/
+.actions{ display:flex; gap: .8em; flex-wrap:wrap; margin-top: 1.4em; }
+.button{
+  display:inline-flex; align-items:center; gap:.4em;
+  padding: .85em 1.5em; border-radius: 999px;
+  font-weight:700; text-decoration:none; font-size: .96rem;
+  border: 1.5px solid transparent; transition: transform .12s ease;
+}
+.button:hover{ transform: translateY(-1px); }
+.button.primary{ background: var(--indigo); color: var(--indigo-ink); }
+.button.primary:hover{ color: var(--indigo-ink); background:#1F2542; }
+.button.secondary{ background: transparent; border-color: var(--ink); color: var(--ink); }
+.button.secondary:hover{ color: var(--ink); border-color: var(--clay); }
+.button.ghost{ background: transparent; color: var(--indigo); padding-left:0; padding-right:0; }
+
+/* Eyebrow / small labels -------------------------------------------------*/
+.eyebrow{
+  font-size: .8rem; font-weight:700; letter-spacing:.04em; color: var(--muted);
+  margin:0 0 .6em;
+}
+
+/* Hero -------------------------------------------------------------------*/
+.hero{
+  padding: 64px 0 40px;
+  display:grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items:center;
+}
+.hero h1{ font-size: clamp(1.9rem, 3.6vw, 2.7rem); }
+.hero .lead{ font-size: 1.08rem; color: var(--muted); max-width: 46ch; }
+.status-pill{
+  display:inline-flex; align-items:center; gap:.5em;
+  font-size:.85rem; color: var(--muted); margin-top: 1.4em;
+}
+.status-pill .dot{
+  width:8px; height:8px; border-radius:50%; background: var(--clay);
+  display:inline-block;
+}
+
+/* Phone mock frame ---------------------------------------------------- */
+.phone-frame{
+  position:relative; width: min(260px, 60vw); margin: 0 auto;
+}
+.phone-frame .shell{
+  border: 8px solid var(--ink); border-radius: 34px; overflow:hidden;
+  background:#000; box-shadow: 0 24px 50px -20px rgba(34,38,29,.35);
+  aspect-ratio: 1284/2778;
+}
+.phone-frame img{ width:100%; height:100%; object-fit: cover; }
+.phone-caption{ text-align:center; font-size:.82rem; color: var(--muted); margin-top: 1em; }
+
+/* generic sections --------------------------------------------------- */
+.section{ padding: 56px 0; border-top: 1px solid var(--line); }
+.section-heading{ max-width: 62ch; margin-bottom: 2.2em; }
+.section-heading h2{ font-size: clamp(1.4rem, 2.6vw, 1.9rem); }
+
+/* Row feature block (alternating) ------------------------------------ */
+.feature-row{
+  display:grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items:center;
+  padding: 44px 0; border-top: 1px solid var(--line);
+}
+.feature-row:first-of-type{ border-top:none; }
+.feature-row.reverse .feature-media{ order:2; }
+.feature-row .pain{ color: var(--muted); font-size:.92rem; margin-bottom:.4em; }
+.feature-row h3{ font-size: 1.4rem; }
+.feature-media .phone-frame{ margin: 0; }
+.feature-media{ display:flex; justify-content:center; }
+
+/* Simple 3-col grid (steps, safety) ------------------------------------ */
+.grid-3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.grid-4{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+.step{ border-top: 3px solid var(--indigo); padding-top: 1em; }
+.step span{ font-family:"Zen Maru Gothic",sans-serif; font-weight:900; color: var(--muted); font-size:.9rem; }
+.step h3{ font-size:1.1rem; margin-top:.2em; }
+
+.safety-item{ border-top: 3px solid var(--marker); padding-top: 1em; }
+.safety-item h3{ font-size:1.05rem; }
+
+/* Comparison table -------------------------------------------------------*/
+.plan-table{ width:100%; border-collapse: collapse; margin-top: 1em; }
+.plan-table th, .plan-table td{
+  text-align:left; padding: .85em 1em; border-bottom: 1px solid var(--line);
+  font-size:.95rem; vertical-align: top;
+}
+.plan-table thead th{
+  font-family:"Zen Maru Gothic",sans-serif; font-size:1rem;
+  border-bottom: 2px solid var(--ink);
+}
+.plan-table td.pro, .plan-table th.pro{ background: rgba(215,232,105,.28); }
+.plan-note{ font-size:.85rem; color: var(--muted); margin-top:1em; }
+
+/* Keyword pill nav (used on sub pages to link back) ------------------- */
+.crumb{ font-size:.85rem; color: var(--muted); margin-bottom: 1.6em; }
+.crumb a{ color: var(--muted); }
+
+/* FAQ ------------------------------------------------------------------- */
+details{ border-top:1px solid var(--line); padding: 1.1em 0; }
+details:last-of-type{ border-bottom: 1px solid var(--line); }
+summary{ cursor:pointer; font-weight:700; font-size: 1.02rem; list-style:none; position:relative; padding-right: 2em;}
+summary::-webkit-details-marker{ display:none; }
+summary::after{ content:"+"; position:absolute; right:0; top:0; font-size:1.3rem; color: var(--muted); }
+details[open] summary::after{ content:"–"; }
+details p{ margin-top: .8em; color: var(--muted); }
+
+/* Related links list (internal linking for SEO) -------------------------*/
+.related-list{ list-style:none; margin:0; padding:0; display:grid; gap: 14px; }
+.related-list a{
+  display:block; padding: 1em 1.2em; border:1px solid var(--line); border-radius: var(--radius);
+  text-decoration:none; color: var(--ink); background: var(--white);
+}
+.related-list a:hover{ border-color: var(--indigo); }
+.related-list small{ display:block; color: var(--muted); margin-top:.3em; font-weight:400; }
+
+/* Disclaimer / notice ---------------------------------------------------- */
+.notice{
+  font-size:.82rem; color: var(--muted); padding: 20px 0; border-top:1px solid var(--line);
+}
+
+/* Footer ------------------------------------------------------------------*/
+.site-footer{ border-top: 1px solid var(--line); padding: 32px 0; }
+.site-footer .wrap{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:1em; }
+.site-footer nav{ display:flex; gap: 1.4em; }
+.site-footer a{ color: var(--muted); font-size:.88rem; text-decoration:none; }
+.site-footer a:hover{ color: var(--indigo); }
+.site-footer p{ font-size:.85rem; color: var(--muted); margin:0; }
+
+/* Static legal pages (support / privacy / terms) --------------------- */
+.legal-body{ max-width: 74ch; }
+.legal-body h2{ font-size:1.3rem; margin-top:1.6em; }
+.legal-body ul, .legal-body ol{ padding-left: 1.3em; }
+.legal-body li{ margin-bottom:.4em; }
+
+.document{ max-width: 74ch; margin: 0 auto; padding: 48px 24px 64px; }
+.document h2{ font-size: 1.25rem; margin-top: 1.8em; }
+.document .updated{ color: var(--muted); font-size:.88rem; }
+.document ul, .document ol{ padding-left: 1.3em; }
+.document li{ margin-bottom: .4em; }
+.contact{ font-size: 1.05rem; font-weight:700; }
+.muted{ color: var(--muted); font-size:.85rem; }
+.link-panel{ display:flex; gap: 1.4em; margin-top: 2.2em; flex-wrap:wrap; }
+.link-panel a{
+  padding:.7em 1.2em; border:1px solid var(--line); border-radius: 999px; text-decoration:none; color: var(--ink);
+}
+.link-panel a:hover{ border-color: var(--indigo); color: var(--indigo); }
+
+/* Responsive -------------------------------------------------------------*/
+@media (max-width: 860px){
+  .hero{ grid-template-columns: 1fr; padding-top: 40px; }
+  .hero .hero-visual{ order:-1; }
+  .feature-row, .feature-row.reverse{ grid-template-columns: 1fr; }
+  .feature-row.reverse .feature-media{ order:0; }
+  .grid-3, .grid-4{ grid-template-columns: 1fr 1fr; }
+  .site-header nav{ display:none; }
+}
+@media (max-width: 480px){
+  .grid-3, .grid-4{ grid-template-columns: 1fr; }
+  .plan-table{ font-size:.85rem; }
+}

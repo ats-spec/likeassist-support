@@ -1,24 +1,14 @@
-# LikeAssist 紹介サイト（リニューアル版）
+# LikeAssist 公開サイト
 
-## 構成
-- `index.html`      … トップ（ハブページ）
-- `kensaku.html`    … ページ内検索の詳細ページ（SEO: iPhone ページ内検索 アプリ）
-- `teikeibun.html`  … 定型文・自由入力ルールの詳細ページ（SEO: iPhone 定型文 入力）
-- `pokepara.html`   … ポケパラ専用機能ページ（SEO: ポケパラ 反応 管理）
-- `ryokin.html`     … 料金の詳細ページ（SEO: LikeAssist 料金）
-- `support.html` / `privacy.html` / `terms.html` … 既存の本文をそのまま維持し、見た目のみ新デザインに統一
-- `style.css`       … 共通スタイル（デザイントークンは DESIGN_NOTES.md 参照）
-- `robots.txt` / `sitemap.xml` … 検索エンジン向け基本設定
-- `assets/`         … 既存の実機スクリーンショット3枚を再利用
+この `site` ディレクトリを公開サイトの正本として管理します。GitHub Pagesのルートにも同じ内容を反映します。
 
-## 差し替えが必要な画像（未受領）
-以下3枚を受領後、該当ファイルの `<img>` を差し替えてください。
+- `index.html`: メインページ
+- `guide.html`: アプリ内から開く使い方・練習ページ
+- `profiles.html`: プロファイルの保存・共有・読み込み
+- `guide-profile.json`: 練習用プロファイル
+- `kensaku.html`: ページ内検索
+- `teikeibun.html`: テンプレート・入力支援
+- `ryokin.html`: 料金
+- `support.html` / `privacy.html` / `terms.html`: 公開用案内
 
-1. **検索候補が強調表示されている画面** → `kensaku.html` のヒーロー画像（現在は `web-search.jpg` を仮使用、明示的に「差し替え予定」の注記あり）
-2. **自由入力ルールの設定例（会社名など入力済み）** → `custom-autofill.jpg` は空欄のため、入力済み画面に差し替えると訴求力が上がる
-3. **サイトプロファイル一覧（複数サイト登録）** → 現在このカット無し。`index.html` の「用途から選ぶ」セクション付近に追加候補
-
-ポケパラのランキング画面（`pokepara.html`）も実機スクリーンショットが未受領のため、現在はSVGの簡易図で代替しています。
-
-## 公開方法
-既存のGitHub Pagesリポジトリ（`ats-spec/likeassist-support`、`main`ブランチのルート）へ、このフォルダの中身をそのままアップロードしてください。ファイル名は現行サイトと同じ（`index.html`など）なので上書きになります。**現行サイトの内容は失われるため、必要であれば先にリポジトリ側でバックアップ（別ブランチ等）を取ってください。**
+個別の第三者サービス専用機能や名称は掲載しません。
