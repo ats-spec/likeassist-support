@@ -76,14 +76,13 @@ img{ max-width:100%; display:block; }
 }
 .brand-mark{
   width: 30px; height:30px; border-radius: 9px;
-  background: var(--indigo); color:#fff;
+  background: #ff7900 url("assets/app-icon.png") center/cover no-repeat; color:transparent;
   display:flex; align-items:center; justify-content:center;
-  font-family:"Zen Maru Gothic",sans-serif; font-weight:900; font-size:1rem;
+  overflow:hidden; font-size:0;
   position:relative;
 }
 .brand-mark::after{
-  content:""; position:absolute; left:5px; right:5px; bottom:5px; height:5px;
-  background: var(--marker); border-radius: 2px;
+  content:none;
 }
 .site-header nav{ display:flex; gap: 1.6em; flex-wrap: wrap; }
 .site-header nav a{
