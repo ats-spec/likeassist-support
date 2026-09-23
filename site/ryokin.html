@@ -23,7 +23,7 @@
     {"@type":"Question","name":"Proの価格はいくらですか？",
      "acceptedAnswer":{"@type":"Answer","text":"日本での設定価格は月額900円、自動更新です。価格表示は購入時のストア商品情報をご確認ください。"}},
     {"@type":"Question","name":"検索回数はどう数えますか？",
-     "acceptedAnswer":{"@type":"Answer","text":"複数の検索候補は1周で1検索として数えます。候補が0件の場合はカウントしません。"}},
+     "acceptedAnswer":{"@type":"Answer","text":"最初の候補へ移動した時点で1検索と数え、残りの候補を順に見る間は追加で数えません。途中でやめても1回は記録されます。候補が0件の場合は数えません。"}},
     {"@type":"Question","name":"Proを解約すると設定は消えますか？",
      "acceptedAnswer":{"@type":"Answer","text":"追加設定の内容は保存されます。無料枠を超える部分は利用が制限され、再度Proにすると利用を再開できます。"}}
   ]
@@ -50,8 +50,8 @@
     <div class="hero-copy">
       <p class="crumb"><a href="index.html">ホーム</a> ／ 料金</p>
       <p class="eyebrow">Plans</p>
-      <h1>まずは無料で。<br>必要になったら<span class="marker-swatch">Proへ</span>。</h1>
-      <p class="lead">LikeAssistは無料で始められます。検索回数やサイトプロファイル数などの上限を超えて使いたくなったら、Proへの切り替えをご検討ください。</p>
+      <h1>まずは無料で。必要になったら<span class="marker-swatch">Proへ</span>。</h1>
+      <p class="lead">LikeAssistは無料で始められます。検索回数やサイトプロファイル数などの上限を増やしたい場合は、Proをご検討ください。</p>
     </div>
     <div class="hero-visual">
       <div class="phone-frame">
@@ -71,28 +71,28 @@
         <tr><td>各サイトの検索ボタン</td><td>1件</td><td class="pro">5件</td></tr>
         <tr><td>Webタブ</td><td>3個</td><td class="pro">5個</td></tr>
         <tr><td>自由入力ルール</td><td>1枠</td><td class="pro">合計5枠</td></tr>
-        <tr><td>基本情報の入力補助</td><td colspan="2" class="pro">利用可</td></tr>
+        <tr><td>氏名・住所などの自動入力</td><td colspan="2" class="pro">両プランで利用可</td></tr>
         <tr><td>テンプレート</td><td colspan="2" class="pro">利用可</td></tr>
-        <tr><td>プロファイルの保存・読み込み</td><td colspan="2" class="pro">利用可（各プランの登録上限内）</td></tr>
+        <tr><td>プロファイルの保存・読み込み</td><td colspan="2" class="pro">両プランで利用可。登録数と検索ボタン数には上記の上限を適用</td></tr>
         <tr><td>価格</td><td>¥0</td><td class="pro">月額 ¥900（自動更新）</td></tr>
       </tbody>
     </table>
-    <p class="plan-note">商品ID：jp.likeassist.pro.monthly。決済はAppleのアプリ内購入です。価格表示は購入時のストア商品情報をご確認ください。</p>
+    <p class="plan-note">ProはAppleのアプリ内購入です。購入前の価格と更新条件はApp Storeの確認画面をご確認ください。</p>
   </section>
 
   <section class="section wrap">
     <div class="section-heading"><p class="eyebrow">Good to know</p><h2>数え方・解約時の扱い</h2></div>
     <details>
       <summary>検索回数はどう数えますか？</summary>
-      <p>複数の検索候補は1周で1検索として数えます。候補が0件の場合はカウントしません。</p>
+      <p>最初の候補へ移動した時点で1検索と数えます。同じ検索ボタンで残りの候補を順に見る間は追加で数えません。途中でやめても、その1回は記録されます。最後の候補まで見た後にもう一度検索すると、新しい1検索が始まります。候補が0件の場合は数えません。回数は端末の現地日付が変わると新しい日の利用分として数えます。</p>
     </details>
     <details>
       <summary>Webタブはどう使いますか？</summary>
-      <p>URL欄の下にある「＋」で現在のウィンドウへ追加し、タイトル横の「×」で閉じます。Webページ内のリンクを長押しすると、現在のタブで開く、新しいウィンドウで開く、新しいタブで開く、リンクをコピーする操作を選べます。新しいウィンドウはリンク先だけを手前に表示して元のウィンドウを全タブごと裏側へ移し、新しいタブは現在のウィンドウ内で入力を残した並行作業に使います。無料は3個、Proは5個までです。</p>
+      <p>URL欄の下にある「＋」で現在のウィンドウにタブを追加し、タイトル横の「×」で閉じます。リンクを長押しすると、現在のタブ、新しいタブ、新しいウィンドウのどこで開くかを選べます。新しいウィンドウを選ぶとリンク先が手前に開き、元のウィンドウとそのタブは背面に残ります。タブは無料で3個、Proで5個まで使えます。</p>
     </details>
     <details>
       <summary>Proを解約すると設定は消えますか？</summary>
-      <p>追加設定の内容は保存されます。無料枠を超える部分は利用が制限され、再度Proにすると利用を再開できます。自由入力ルールは、無料で使用する1枠を選べます。</p>
+      <p>Proの利用期間が終了しても、Pro利用中に追加した設定は端末内に残ります。ただし、無料プランの上限を超えるプロファイル、検索ボタン、タブ、自由入力ルールは利用が制限されます。自由入力ルールは、無料で使用する1枠を選択できます。Proを再開すると、保存されていたPro用の設定を再び利用できます。</p>
     </details>
     <details>
       <summary>複数のサイトを無料で使えますか？</summary>
@@ -109,7 +109,7 @@
     </ul>
   </section>
 
-  <p class="notice wrap">価格・仕様は変更される場合があります。最新情報は購入時のApp Store表示をご確認ください。</p>
+  <p class="notice wrap">購入前の価格・更新条件はApp Storeの確認画面で、機能と上限はこのページでご確認ください。</p>
 </main>
 
 <footer class="site-footer">

@@ -6,11 +6,11 @@
 <link rel="icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="assets/app-icon.png">
 <title>LikeAssist｜iPhoneのページ内検索・定型文入力を支援するアプリ</title>
-<meta name="description" content="LikeAssistは、iPhoneでよく使うWebページの「探す」「入力する」を支援するアプリです。登録した文字を含むボタンを見つけ、いつもの文章をワンタップで入力。サイトごとの検索設定はファイルやGitHub URLで共有できます。">
+<meta name="description" content="LikeAssistは、iPhoneでよく使うWebページの「探す」「入力する」を支援するアプリです。登録した文字を含むボタンへ移動し、テンプレートや自動入力で繰り返しの入力を補助します。サイトごとの検索設定はファイルやGitHub URLで共有できます。">
 <link rel="canonical" href="https://ats-spec.github.io/likeassist-support/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="LikeAssist｜iPhoneのページ内検索・定型文入力を支援するアプリ">
-<meta property="og:description" content="登録した文字を含むボタンを探し、いつもの文章をワンタップで入力。よく使うサイトの設定を保存できるiPhoneアプリです。">
+<meta property="og:description" content="登録した文字を含むボタンへ移動し、テンプレートや自動入力で繰り返しの入力を補助します。よく使うサイトの設定を保存できるiPhoneアプリです。">
 <meta property="og:url" content="https://ats-spec.github.io/likeassist-support/">
 <meta property="og:image" content="https://ats-spec.github.io/likeassist-support/assets/custom-autofill.jpg">
 <meta property="og:locale" content="ja_JP">
@@ -57,8 +57,8 @@
   <section class="hero wrap">
     <div class="hero-copy">
       <p class="eyebrow">iPhone × Web操作支援</p>
-      <h1>iPhoneのWebページで、<br><span class="marker-swatch">探す・入力する</span>手間を減らす。</h1>
-      <p class="lead">LikeAssistは、よく使うサイトの検索設定や定型文を保存できるiPhoneアプリです。登録した文字を含むボタンやリンクを探し、いつもの文章の入力を支援します。</p>
+      <h1>iPhoneのWebページで、<span class="marker-swatch">探す・入力する</span>手間を減らす。</h1>
+      <p class="lead">LikeAssistは、よく使うサイトの検索設定や入力内容を保存できるiPhoneアプリです。登録した文字を含むボタンやリンクの候補へ順に移動できます。入力欄に合わせた内容の入力も支援します。</p>
       <div class="actions">
         <a class="button primary" href="#demo">操作の流れを見る ↓</a>
         <a class="button secondary" href="ryokin.html">無料プランの内容を見る</a>
@@ -104,8 +104,8 @@
     <div class="feature-row">
       <div class="feature-text">
         <p class="pain">「あのボタン、どこだっけ？」</p>
-        <h3>スクロールで探す前に、<br>文字から見つける。</h3>
-        <p>設定した文字を含むボタンやリンクへ移動します。候補が複数あっても、順番に確認できます。サイトごとに検索文字を保存できるので、次に開くときも迷いません。</p>
+        <h3>スクロールで探す前に、文字から見つける。</h3>
+        <p>設定した文字を含むボタンやリンクへ移動します。候補が複数あっても、順番に確認できます。検索文字はサイトごとに端末内へ保存され、次回も同じ設定を使えます。</p>
         <a class="button ghost" href="kensaku.html">ページ内検索の詳細を見る →</a>
       </div>
       <div class="feature-media">
@@ -118,8 +118,8 @@
     <div class="feature-row reverse">
       <div class="feature-text">
         <p class="pain">「また同じ文章を入力している」</p>
-        <h3>入力欄に合わせて、<br>自分だけのルールを。</h3>
-        <p>入力欄の目印となる文字と、入れたい内容を登録できます。完全一致／含む、対象ドメイン、有効／無効を設定可能。入力済みの欄は上書きせず、送信も利用者自身が行います。</p>
+        <h3>入力欄に合わせて、自分だけのルールを。</h3>
+        <p>入力欄の目印となる文字と、入れたい内容を登録できます。目印との一致条件、対象ドメイン、ルールの有効／無効を設定できます。入力済みの欄は上書きせず、送信も利用者自身が行います。</p>
         <a class="button ghost" href="teikeibun.html">定型文・入力支援の詳細を見る →</a>
       </div>
       <div class="feature-media">
@@ -139,7 +139,7 @@
     <div class="grid-3">
       <div class="safety-item">
         <h3>サイトごとに設定を保存</h3>
-        <p>Safariのページ内検索はその場限りですが、LikeAssistはサイトごとに検索文字・表示名・検索ボタンのON/OFFを保存し、次回も同じ設定で開けます。</p>
+        <p>Safari標準のページ内検索では、検索文字をサイト設定として保存しません。LikeAssistでは、サイトごとに検索文字、ボタンの表示名、有効／無効を保存し、次回も同じ設定を使えます。</p>
       </div>
       <div class="safety-item">
         <h3>入力欄の目印で振り分け</h3>
@@ -187,7 +187,7 @@
         <tr><td>プロファイルの保存・読み込み</td><td colspan="2" class="pro">両プランで利用可（各プランの登録上限内）</td></tr>
       </tbody>
     </table>
-    <p class="plan-note">月額900円、自動更新。検索候補は1周で1検索、候補0件はカウントしません。価格は購入時のストア表示をご確認ください。</p>
+    <p class="plan-note">Proは月額900円の自動更新サブスクリプションです。検索は最初の候補へ移動した時点で1回と数え、残りの候補を順に見る間は追加で数えません。途中でやめても、その1回は記録されます。候補0件は数えません。購入前の価格と更新条件はApp Storeの確認画面をご確認ください。</p>
     <div class="actions"><a class="button primary" href="ryokin.html">料金の詳細・よくある質問へ ↗</a></div>
   </section>
 
@@ -198,9 +198,9 @@
       <h2>入力も操作も、利用者の確認を大切に</h2>
     </div>
     <div class="grid-3">
-      <div class="safety-item"><h3>端末内に保存</h3><p>設定や履歴などのアプリデータは端末内に保存します。閲覧先サイトとの通信は発生します。</p></div>
-      <div class="safety-item"><h3>明示的に操作</h3><p>自動入力はボタンを押したときだけ。フォームを勝手に送信しません。パスワードや決済情報は対象外です。</p></div>
-      <div class="safety-item"><h3>サイトのルールを尊重</h3><p>各Webサービスの利用規約やルールを確認してご利用ください。LikeAssistは第三者サービスの公式アプリではありません。</p></div>
+      <div class="safety-item"><h3>端末内に保存</h3><p>設定や履歴などのアプリデータは端末内に保存します。Webページを開くと閲覧先サイトと通信します。共有設定の読み込みでは、そのファイルを公開するサービスとも通信します。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p></div>
+      <div class="safety-item"><h3>明示的に操作</h3><p>自動入力は利用者がボタンを押したときだけ実行し、フォームは送信しません。パスワード、認証コード、カードや口座などの決済・金融情報の入力欄は、基本の自動入力と自由入力ルールの対象から除外します。</p></div>
+      <div class="safety-item"><h3>サイトのルールを尊重</h3><p>各Webサービスの利用規約やルールを確認してご利用ください。LikeAssistは、第三者が提供するWebサービスの公式アプリではありません。</p></div>
     </div>
   </section>
 
@@ -227,7 +227,7 @@
     <div class="section-heading"><p class="eyebrow">GOOD TO KNOW</p><h2>気になること、先に確認。</h2></div>
     <details>
       <summary>どのサイトでも使えますか？</summary>
-      <p>さまざまなWebサイトが対象ですが、ページ構造や制限によって検索・入力が動作しない場合があります。ページ内検索はボタン・リンクが対象です。</p>
+      <p>すべてのサイトや画面での動作は保証できません。ページ構造やサイト側の制限により、検索・入力支援が利用できない場合があります。ページ内検索は文字を含むボタン・リンクが対象で、画像だけのボタンなどは見つからない場合があります。</p>
     </details>
     <details>
       <summary>ボタン操作やフォーム送信を自動で行いますか？</summary>
@@ -235,7 +235,7 @@
     </details>
     <details>
       <summary>Safariの検索機能で十分ではありませんか？</summary>
-      <p>Safariのページ内検索はその場限りの検索です。LikeAssistはサイトごとに検索文字や表示名を保存し、次に開くときもすぐに使えます。入力欄の目印に応じた定型文の振り分けにも対応します。</p>
+      <p>Safari標準のページ内検索では、検索文字をサイト設定として保存しません。LikeAssistでは、サイトごとに検索文字や表示名を保存して繰り返し使えます。入力欄の目印に応じて内容を入れる自由入力ルールや、選んで使うテンプレートも利用できます。</p>
     </details>
     <details>
       <summary>Proを解約すると設定は消えますか？</summary>

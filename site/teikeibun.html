@@ -8,7 +8,7 @@
 <link rel="canonical" href="https://ats-spec.github.io/likeassist-support/teikeibun.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iPhoneの定型文入力アプリ｜LikeAssistの自由入力ルール">
-<meta property="og:description" content="入力欄の目印となる文字と、入れたい内容を登録。いつもの文章をワンタップで入力できます。">
+<meta property="og:description" content="入力欄の目印と入れたい内容を登録する自由入力ルールと、文章を選んで挿入するテンプレートを説明します。">
 <meta property="og:url" content="https://ats-spec.github.io/likeassist-support/teikeibun.html">
 <meta property="og:image" content="https://ats-spec.github.io/likeassist-support/assets/custom-autofill.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,8 +48,8 @@
     <div class="hero-copy">
       <p class="crumb"><a href="index.html">ホーム</a> ／ 定型文・自由入力ルール</p>
       <p class="eyebrow">iPhone 定型文入力</p>
-      <h1>いつもの文章を、<br><span class="marker-swatch">いつもの入力位置へ</span>。</h1>
-      <p class="lead">入力欄の目印となる文字と、入れたい内容を登録できます。会社名や会員番号など、よく入力する内容を一度登録すれば、対象の入力欄にワンタップで入力できます。</p>
+      <h1>いつもの文章を、<span class="marker-swatch">いつもの入力位置へ</span>。</h1>
+      <p class="lead">繰り返し入力する情報は、内容に合わせて二つの機能を使い分けます。自由入力ルールは、「会社名」など入力欄の目印と入れたい内容を組み合わせて登録する機能です。テンプレートは、メッセージ欄などをタップし、一覧から文章を選んで挿入する機能です。</p>
       <div class="actions">
         <a class="button primary" href="#rules">ルールの設定方法を見る ↓</a>
         <a class="button secondary" href="ryokin.html">無料枠を確認する</a>
@@ -72,7 +72,7 @@
       <div class="step"><span>目印</span><h3>入力欄を識別</h3><p>ラベルなどの文字で、どの入力欄かを判定します。</p></div>
       <div class="step"><span>内容</span><h3>入れたい内容</h3><p>会社名や住所など、繰り返し使う文章を登録します。</p></div>
       <div class="step"><span>条件</span><h3>完全一致／含む</h3><p>入力欄の目印に対する一致条件を選べます。</p></div>
-      <div class="step"><span>範囲</span><h3>対象ドメイン</h3><p>未指定なら対象となるHTTPSサイト全般に適用されます。</p></div>
+      <div class="step"><span>範囲</span><h3>対象ドメイン</h3><p>ドメインを指定すると、そのサイトだけで使用します。空欄の場合は、LikeAssistで開いたHTTPSサイト全般で候補を判定します。実際の入力は「自動入力」を押したときだけです。共通して使う内容だけを登録してください。</p></div>
     </div>
   </section>
 
@@ -84,7 +84,7 @@
     <div class="grid-3">
       <div class="safety-item"><h3>上書きしない</h3><p>すでに入力済みの欄には記入しません。空欄の入力欄にのみ反映されます。</p></div>
       <div class="safety-item"><h3>送信は自分で</h3><p>フォームの送信ボタンは利用者自身が押します。自動送信は行いません。</p></div>
-      <div class="safety-item"><h3>機密情報は対象外</h3><p>パスワード・認証コード・決済情報は自動入力に対応していません。これらをルールに登録しないでください。</p></div>
+      <div class="safety-item"><h3>機密情報は登録しない</h3><p>パスワード、認証コード、カードや口座などの決済・金融情報の入力欄は、基本の自動入力と自由入力ルールの対象から除外します。これらの情報を自由入力ルールやテンプレートに登録しないでください。</p></div>
     </div>
   </section>
 
@@ -98,7 +98,7 @@
         <tr><td>テンプレート</td><td colspan="2" class="pro">両プランで利用可</td></tr>
       </tbody>
     </table>
-    <p class="plan-note">Pro解約後も追加設定の内容は保存され、無料で使う1枠を選べます。複数のルールが一致した場合は選択して入力します。</p>
+    <p class="plan-note">Proの利用期間が終了しても追加設定の内容は端末内に残り、無料で使う1枠を選べます。複数のルールが一致した場合は、利用者が入れる内容を選びます。</p>
   </section>
 
   <section class="section wrap">
@@ -110,7 +110,7 @@
     </ul>
   </section>
 
-  <p class="notice wrap">LikeAssistは第三者Webサービスの公式アプリではありません。</p>
+  <p class="notice wrap">LikeAssistは、第三者が提供するWebサービスの公式アプリではありません。</p>
 </main>
 
 <footer class="site-footer">
