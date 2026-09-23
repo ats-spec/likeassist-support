@@ -57,41 +57,33 @@
   <section class="hero wrap">
     <div class="hero-copy">
       <h1>iPhoneでのWeb操作をもっとスムーズに</h1>
-      <p class="lead">よく使うWebサイトの検索設定や入力内容を保存。ページ内のボタンやリンクを探し、自動入力や定型文の挿入をiPhoneで手軽に行えるよう支援します。</p>
+      <p class="lead">よく使うサイトの検索設定や入力ルールを保存して、ボタン・リンクの検索、複数ページのタブ切替、自動入力、定型文の挿入に使えます。</p>
+      <ul class="hero-highlights" aria-label="LikeAssistでできること">
+        <li>ボタン・リンクをページ内検索</li>
+        <li>複数のページをタブで切り替え</li>
+        <li>入力欄への自動入力・定型文の挿入</li>
+      </ul>
       <div class="actions">
         <a class="button primary" href="#demo">操作の流れを見る ↓</a>
         <a class="button secondary" href="ryokin.html">無料プランの内容を見る</a>
       </div>
+      <p class="hero-price">無料プランから利用できます。Proは日本のApp Storeで月額900円（自動更新）です。購入前にApp Storeの確認画面で価格と更新条件をご確認ください。<a href="ryokin.html">料金の詳細を見る</a></p>
       <p class="status-pill"><span class="dot" aria-hidden="true"></span>App Store 公開準備中</p>
     </div>
-  </section>
-
-  <!-- ENTRY POINTS（用途別・検索流入導線） ----------------------------- -->
-  <section class="section wrap">
-    <div class="section-heading">
-      <p class="eyebrow">こんな悩みはありませんか</p>
-      <h2>使う場面から、詳しい説明へ。</h2>
-    </div>
-    <ul class="related-list">
-      <li><a href="kensaku.html"><span class="marker-tag">見つける</span><br>同じページでボタンを探す手間を減らしたい<small>→ ページ内検索とサイトごとの設定を見る</small></a></li>
-      <li><a href="teikeibun.html"><span class="marker-tag">入力する</span><br>会社名や定型文を繰り返し入力している<small>→ 自動入力ルールとテンプレートを見る</small></a></li>
-      <li><a href="profiles.html"><span class="marker-tag">共有する</span><br>自分の検索設定を別の端末でも使いたい<small>→ JSONファイルやGitHubを使った共有方法を見る</small></a></li>
-      <li><a href="ryokin.html"><span class="marker-tag">料金を確認する</span><br>無料プランとProの違いを知りたい<small>→ 料金と機能の比較を見る</small></a></li>
-    </ul>
   </section>
 
   <!-- FEATURE ROWS ----------------------------------------------------- -->
   <section class="section wrap">
     <div class="section-heading">
-      <p class="eyebrow">LESS FRICTION, MORE FLOW</p>
-      <h2>検索と入力の設定を、サイトごとに保存。</h2>
-      <p>対応するWebページで、検索や入力の手間を減らすために使えます。ページの構造によっては利用できない機能があります。</p>
+      <p class="eyebrow">LIKEASSISTでできること</p>
+      <h2>4つの機能を、実際の画面で紹介。</h2>
+      <p>ページの構造やサイト側の制限により、一部の機能を利用できない場合があります。</p>
     </div>
 
-    <div class="feature-row">
+    <div class="feature-row" id="search">
       <div class="feature-text">
-        <p class="pain">「あのボタン、どこだっけ？」</p>
-        <h3>探したい文字から、ボタンやリンクを見つける。</h3>
+        <p class="pain">ページ内検索</p>
+        <h3>探したいボタンやリンクを、文字から見つける。</h3>
         <p>検索文字をサイトごとに登録しておくと、その文字を含むボタンやリンクへ移動できます。候補が複数あるときは、検索ボタンを押して順に確認できます。登録内容は端末内に保存されます。</p>
         <a class="button ghost" href="kensaku.html">ページ内検索の詳細を見る →</a>
       </div>
@@ -103,11 +95,11 @@
       </div>
     </div>
 
-    <div class="feature-row reverse">
+    <div class="feature-row reverse" id="autofill">
       <div class="feature-text">
-        <p class="pain">「また同じ文章を入力している」</p>
-        <h3>入力欄ごとに、使う内容を登録。</h3>
-        <p>入力欄のラベルなどに含まれる目印の文字と、入力したい内容を組み合わせて登録できます。一致条件や対象ドメインも設定できます。入力済みの欄は上書きせず、フォームの送信は行いません。</p>
+        <p class="pain">自動入力・テンプレート</p>
+        <h3>入力欄に合わせて自動入力。定型文も挿入。</h3>
+        <p>入力欄のラベルなどに含まれる目印と、入力したい内容を登録できます。自動入力はボタンを押したときに実行し、入力済みの欄は上書きしません。定型文は入力欄で選んで挿入します。フォームは送信しません。</p>
         <a class="button ghost" href="teikeibun.html">定型文・入力支援の詳細を見る →</a>
       </div>
       <div class="feature-media">
@@ -118,17 +110,32 @@
       </div>
     </div>
 
-    <div class="feature-row">
+    <div class="feature-row" id="tabs">
       <div class="feature-text">
-        <p class="pain">「さっき見ていたサイトに戻りたい」</p>
-        <h3>複数のサイトを開いて、タブで切り替え。</h3>
-        <p>買い物ページと問い合わせページなど、見比べたいページを別々のタブで開いておけます。URL欄の「＋」やリンクの長押しでタブを追加し、上部のタブ名をタップして切り替えます。前のページを探し直さず、開いたサイトへ戻れます。</p>
+        <p class="pain">タブ切替</p>
+        <h3>複数のページを開いたまま、すばやく切り替え。</h3>
+        <p>買い物ページと問い合わせページなどを別々のタブで開き、上部のタブ名をタップして切り替えます。タブはページを開いたまま行き来する機能です。検索文字や開始URLなどをまとめるプロファイルとは別です。</p>
       </div>
       <div class="feature-media">
         <div class="phone-frame" style="width:220px;">
           <div class="shell"><img src="assets/browser-tabs.png" alt="URL欄の下に2つのタブと追加ボタンが表示されたLikeAssistの画面" width="1206" height="2622"></div>
         </div>
         <p class="phone-caption">上部のタブ名をタップしてページを切り替え</p>
+      </div>
+    </div>
+
+    <div class="feature-row" id="profiles">
+      <div class="feature-text">
+        <p class="pain">サイト別設定（プロファイル）</p>
+        <h3>よく使うサイト設定を、名前と色で整理。</h3>
+        <p>検索文字や開始URLをサイト設定ごとに保存できます。プロファイルの作成は必須ではありません。必要な設定だけをファイルに書き出して別の端末へ移せます。ログイン情報や自動入力の登録値は共有ファイルに含まれません。</p>
+        <a class="button ghost" href="profiles.html">プロファイルの使い方を見る →</a>
+      </div>
+      <div class="feature-media">
+        <div class="phone-frame profile-screen">
+          <div class="shell"><img src="assets/profile-colors.png" alt="プロファイルの色を選び、サイト名と開始URLを設定するLikeAssistの画面" width="1206" height="2622"></div>
+        </div>
+        <p class="phone-caption">プロファイルはサイト別設定を整理する機能</p>
       </div>
     </div>
   </section>
@@ -204,24 +211,6 @@
       <div class="safety-item"><h3>端末内に保存</h3><p>設定や履歴などのアプリデータは端末内に保存します。Webページを開くと閲覧先サイトと通信します。共有設定の読み込みでは、そのファイルを公開するサービスとも通信します。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p></div>
       <div class="safety-item"><h3>明示的に操作</h3><p>自動入力は利用者がボタンを押したときだけ実行し、フォームは送信しません。パスワード、認証コード、カードや口座などの決済・金融情報の入力欄は、基本の自動入力と自由入力ルールの対象から除外します。</p></div>
       <div class="safety-item"><h3>サイトのルールを尊重</h3><p>各Webサービスの利用規約やルールを確認してご利用ください。LikeAssistは、第三者が提供するWebサービスの公式アプリではありません。</p></div>
-    </div>
-  </section>
-
-  <!-- PROFILE SHARING -->
-  <section class="section wrap">
-    <div class="feature-row" style="padding-top:0;">
-      <div class="feature-text">
-        <p class="eyebrow">サイト別の設定</p>
-        <h2>使いたいサイト設定へ、すばやく切り替え。</h2>
-        <p>仕事用・買い物用など、よく使う設定に名前と色を付けておけば、操作メニューの「プロファイルを開く」から選び直せます。開始URLや検索ボタンも設定ごとに管理できるので、サイトに合わせた設定を見つけやすくなります。設定はJSONファイルに書き出して別の端末へ移せますが、自動入力の個人情報、テンプレート、履歴、購入情報は共有されません。</p>
-        <a class="button ghost" href="profiles.html">プロファイルの使い方を見る →</a>
-      </div>
-      <div class="feature-media">
-        <div class="phone-frame profile-screen">
-          <div class="shell"><img src="assets/profile-colors.png" alt="プロファイルごとに色を選び、サイト名と開始URLを設定する画面" width="1206" height="2622"></div>
-        </div>
-        <p class="phone-caption">名前と色でサイト設定を見分ける</p>
-      </div>
     </div>
   </section>
 
