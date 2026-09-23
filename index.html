@@ -26,7 +26,7 @@
   "name": "LikeAssist",
   "applicationCategory": "UtilitiesApplication",
   "operatingSystem": "iOS",
-  "description": "iPhoneのWebページで、探す・入力する手間を減らすアプリ。登録した文字を含むボタンやリンクを探し、定型文の入力を支援します。",
+  "description": "iPhoneでWebページを使うときの検索・入力を支援するアプリ。設定した文字を含むボタンやリンクを見つけ、自由入力ルールやテンプレートで文章の入力を補助します。",
   "url": "https://ats-spec.github.io/likeassist-support/",
   "offers": [
     { "@type": "Offer", "price": "0", "priceCurrency": "JPY", "name": "無料プラン" },
@@ -57,8 +57,8 @@
   <section class="hero wrap">
     <div class="hero-copy">
       <p class="eyebrow">iPhone × Web操作支援</p>
-      <h1>iPhoneのWebページで、<span class="marker-swatch">探す・入力する</span>手間を減らす。</h1>
-      <p class="lead">LikeAssistは、よく使うサイトの検索設定や入力内容を保存できるiPhoneアプリです。登録した文字を含むボタンやリンクの候補へ順に移動できます。入力欄に合わせた内容の入力も支援します。</p>
+      <h1>iPhoneでWebページを使うときの<span class="marker-swatch">検索・入力</span>を、もっと手軽に。</h1>
+      <p class="lead">LikeAssistは、よく使うサイトの検索設定や入力内容を保存しておけるiPhoneアプリです。設定した文字を含むボタンやリンクを見つけ、候補が複数あれば順に確認できます。入力欄に合わせた自動入力や、定型文の挿入にも対応しています。</p>
       <div class="actions">
         <a class="button primary" href="#demo">操作の流れを見る ↓</a>
         <a class="button secondary" href="ryokin.html">無料プランの内容を見る</a>
@@ -74,9 +74,9 @@
   </section>
 
   <section class="trust-strip wrap" aria-label="LikeAssistの特徴" style="display:flex;gap:2.5em;flex-wrap:wrap;padding:20px 24px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
-    <p style="margin:0;"><strong>端末内に保存</strong><br><small style="color:var(--muted)">設定・履歴データ</small></p>
-    <p style="margin:0;"><strong>明示操作のみ</strong><br><small style="color:var(--muted)">ボタンを押した時だけ動作</small></p>
-    <p style="margin:0;"><strong>無料で開始</strong><br><small style="color:var(--muted)">1日10検索・1枠の入力ルール</small></p>
+    <p style="margin:0;"><strong>端末内に保存</strong><br><small style="color:var(--muted)">検索設定・入力ルール・履歴</small></p>
+    <p style="margin:0;"><strong>操作は自分で確認</strong><br><small style="color:var(--muted)">自動クリック・送信はしません</small></p>
+    <p style="margin:0;"><strong>無料で開始</strong><br><small style="color:var(--muted)">1日10検索・自由入力ルール1枠</small></p>
   </section>
 
   <!-- ENTRY POINTS（用途別・検索流入導線） ----------------------------- -->
@@ -86,10 +86,10 @@
       <h2>使う場面から、詳しい説明へ。</h2>
     </div>
     <ul class="related-list">
-      <li><a href="kensaku.html"><span class="marker-tag">見つける</span><br>同じサイトで毎回ボタンを探している<small>→ ページ内検索・サイトごとの設定保存について見る</small></a></li>
-      <li><a href="teikeibun.html"><span class="marker-tag">入力する</span><br>会社名や定型文を何度も入力している<small>→ 定型文・自由入力ルールについて見る</small></a></li>
-      <li><a href="profiles.html"><span class="marker-tag">共有する</span><br>自分の検索設定を保存・共有したい<small>→ JSONファイルとGitHub URLでの共有方法を見る</small></a></li>
-      <li><a href="ryokin.html"><span class="marker-tag">検討する</span><br>無料で足りるか、Proが必要か知りたい<small>→ 料金・機能比較を見る</small></a></li>
+      <li><a href="kensaku.html"><span class="marker-tag">見つける</span><br>同じページでボタンを探す手間を減らしたい<small>→ ページ内検索とサイトごとの設定を見る</small></a></li>
+      <li><a href="teikeibun.html"><span class="marker-tag">入力する</span><br>会社名や定型文を繰り返し入力している<small>→ 自動入力ルールとテンプレートを見る</small></a></li>
+      <li><a href="profiles.html"><span class="marker-tag">共有する</span><br>自分の検索設定を別の端末でも使いたい<small>→ JSONファイルやGitHubを使った共有方法を見る</small></a></li>
+      <li><a href="ryokin.html"><span class="marker-tag">料金を確認する</span><br>無料プランとProの違いを知りたい<small>→ 料金と機能の比較を見る</small></a></li>
     </ul>
   </section>
 
@@ -98,14 +98,14 @@
     <div class="section-heading">
       <p class="eyebrow">LESS FRICTION, MORE FLOW</p>
       <h2>そのひと手間、毎回くり返さなくていい。</h2>
-      <p>特定のサイトに限らず、普段使うさまざまなWebページで利用できます。</p>
+      <p>対応するWebページで、検索や入力の手間を減らすために使えます。ページの構造によっては利用できない機能があります。</p>
     </div>
 
     <div class="feature-row">
       <div class="feature-text">
         <p class="pain">「あのボタン、どこだっけ？」</p>
-        <h3>スクロールで探す前に、文字から見つける。</h3>
-        <p>設定した文字を含むボタンやリンクへ移動します。候補が複数あっても、順番に確認できます。検索文字はサイトごとに端末内へ保存され、次回も同じ設定を使えます。</p>
+        <h3>探したい文字から、ボタンやリンクを見つける。</h3>
+        <p>検索文字をサイトごとに登録しておくと、その文字を含むボタンやリンクへ移動できます。候補が複数あるときは、検索ボタンを押して順に確認できます。登録内容は端末内に保存されます。</p>
         <a class="button ghost" href="kensaku.html">ページ内検索の詳細を見る →</a>
       </div>
       <div class="feature-media">
@@ -118,8 +118,8 @@
     <div class="feature-row reverse">
       <div class="feature-text">
         <p class="pain">「また同じ文章を入力している」</p>
-        <h3>入力欄に合わせて、自分だけのルールを。</h3>
-        <p>入力欄の目印となる文字と、入れたい内容を登録できます。目印との一致条件、対象ドメイン、ルールの有効／無効を設定できます。入力済みの欄は上書きせず、送信も利用者自身が行います。</p>
+        <h3>入力欄ごとに、使う内容を登録。</h3>
+        <p>入力欄のラベルなどに含まれる目印の文字と、入力したい内容を組み合わせて登録できます。一致条件や対象ドメインも設定できます。入力済みの欄は上書きせず、フォームの送信は行いません。</p>
         <a class="button ghost" href="teikeibun.html">定型文・入力支援の詳細を見る →</a>
       </div>
       <div class="feature-media">
@@ -142,12 +142,12 @@
         <p>Safari標準のページ内検索では、検索文字をサイト設定として保存しません。LikeAssistでは、サイトごとに検索文字、ボタンの表示名、有効／無効を保存し、次回も同じ設定を使えます。</p>
       </div>
       <div class="safety-item">
-        <h3>入力欄の目印で振り分け</h3>
-        <p>キーボードアプリの定型文機能と異なり、入力欄側の目印となる文字で内容を振り分けます。サイトごとにルールを分けたい場合に向いています。</p>
+        <h3>入力欄に合わせて選べる</h3>
+        <p>入力欄に表示されたラベルなどの文字を目印にして、入れる内容を選びます。決まった文章を自分で選んで挿入するテンプレートも使えます。</p>
       </div>
       <div class="safety-item">
         <h3>候補を順番に確認</h3>
-        <p>一致する候補が複数ある場合も、順に移動して確認できます。見つけた後の操作は、利用者自身がボタンを押して行います。</p>
+        <p>一致する候補が複数ある場合は、検索ボタンを押すたびに次の候補へ移動します。見つけた後にボタンを押すなどの操作は、ご自身で行います。</p>
       </div>
     </div>
   </section>
@@ -157,12 +157,12 @@
     <div class="section-heading">
       <p class="eyebrow">GET READY IN THREE STEPS</p>
       <h2>使いはじめは、シンプルに。</h2>
-      <p>App Store公開後は、次の手順でご利用いただけます。</p>
+      <p>アプリを使い始めるときは、次の手順で設定できます。</p>
     </div>
     <div class="grid-3">
       <div class="step"><span>01</span><h3>Webページを開く</h3><p>URLを入力するか、お気に入りからページを開きます。リンクの長押しで新しいウィンドウまたは別タブを選べます。</p></div>
-      <div class="step"><span>02</span><h3>自分の設定を登録</h3><p>探す文字や入力内容を設定。使う機能から少しずつで大丈夫です。</p></div>
-      <div class="step"><span>03</span><h3>ボタンで操作</h3><p>候補への移動や空欄への入力を支援。最後は自分で内容を確認します。</p></div>
+      <div class="step"><span>02</span><h3>必要な設定を登録</h3><p>検索する文字や入力内容を登録します。使いたい機能から設定できます。</p></div>
+      <div class="step"><span>03</span><h3>候補を確認して操作</h3><p>検索候補への移動や空欄への入力を支援します。内容を確認し、必要な操作はご自身で行います。</p></div>
     </div>
     <div class="actions"><a class="button primary" href="support.html">操作ガイドを読む ↗</a></div>
   </section>
@@ -179,7 +179,7 @@
       </thead>
       <tbody>
         <tr><td>ページ内検索</td><td>1日10回</td><td class="pro">1日100回</td></tr>
-        <tr><td>サイトプロファイル</td><td>3件</td><td class="pro">20件</td></tr>
+        <tr><td>サイト設定（プロファイル）</td><td>3件</td><td class="pro">20件</td></tr>
         <tr><td>各サイトの検索ボタン</td><td>1件</td><td class="pro">5件</td></tr>
         <tr><td>Webタブ</td><td>3個</td><td class="pro">5個</td></tr>
         <tr><td>自由入力ルール</td><td>1枠</td><td class="pro">合計5枠</td></tr>
@@ -187,7 +187,7 @@
         <tr><td>プロファイルの保存・読み込み</td><td colspan="2" class="pro">両プランで利用可（各プランの登録上限内）</td></tr>
       </tbody>
     </table>
-    <p class="plan-note">Proは月額900円の自動更新サブスクリプションです。検索は最初の候補へ移動した時点で1回と数え、残りの候補を順に見る間は追加で数えません。途中でやめても、その1回は記録されます。候補0件は数えません。購入前の価格と更新条件はApp Storeの確認画面をご確認ください。</p>
+    <p class="plan-note">日本のApp StoreでのProの価格は月額900円です（自動更新）。検索は最初の候補へ移動した時点で1回と数え、残りの候補を順に見る間は追加で数えません。途中でやめても、その1回は記録されます。候補が0件の場合は数えません。購入前にApp Storeの確認画面で価格と更新条件をご確認ください。</p>
     <div class="actions"><a class="button primary" href="ryokin.html">料金の詳細・よくある質問へ ↗</a></div>
   </section>
 
@@ -243,7 +243,7 @@
     </details>
     <details>
       <summary>どこからダウンロードできますか？</summary>
-      <p>現在はApp Store公開準備中です。公開後、このページにダウンロードへのリンクを掲載します。</p>
+      <p>App Storeで公開後、このページにダウンロードリンクを掲載します。</p>
     </details>
   </section>
 
@@ -251,7 +251,7 @@
   <section class="section wrap">
     <p class="eyebrow">LikeAssist</p>
     <h2>よく使うWebページを、もっと使いやすく。</h2>
-    <p>App Store公開に向けて準備中です。操作方法やご質問はサポートページをご覧ください。</p>
+    <p>操作方法やご質問はサポートページをご覧ください。App Storeで公開後、このページからアプリをご案内します。</p>
     <div class="actions">
       <a class="button primary" href="support.html">使い方・よくある質問</a>
       <a class="button secondary" href="mailto:ats.apphelp@gmail.com">お問い合わせ</a>
