@@ -276,6 +276,11 @@ details p{ margin-top: .8em; color: var(--muted); }
 .home-page .hero-copy{max-width:790px;margin:0 auto}
 .home-page .hero h1{max-width:19ch;font-size:clamp(2.1rem,5.2vw,3.7rem);line-height:1.42}
 .home-page .hero .lead{max-width:58ch;font-size:clamp(1rem,1.7vw,1.16rem);line-height:1.95}
+.home-page .hero-highlights{list-style:none;padding:0;margin:1.1em 0 0;display:grid;gap:.45em;color:var(--ink);font-weight:700}
+.home-page .hero-highlights li{position:relative;padding-left:1.7em}
+.home-page .hero-highlights li::before{content:"✓";position:absolute;left:0;top:.08em;color:var(--indigo);font-weight:900}
+.home-page .hero-price{max-width:58ch;margin:1.1em 0 0;padding:14px 16px;border-radius:12px;background:rgba(255,255,255,.78);font-size:.92rem;line-height:1.7}
+.home-page .hero-price a{display:inline-block;margin-left:.25em;font-weight:700;white-space:nowrap}
 .home-page .status-pill{margin-bottom:0}
 .home-page .related-list{max-width:790px}
 .home-page .feature-row,
@@ -284,12 +289,26 @@ details p{ margin-top: .8em; color: var(--muted); }
 .home-page .grid-4{
   grid-template-columns:minmax(0,1fr);
 }
-.home-page .feature-row{gap:22px;padding:38px 0}
+.home-page .feature-row{
+  display:block;
+  margin:18px 0 28px;
+  padding:clamp(24px,5vw,42px);
+  border:0;
+  border-radius:24px;
+  background:#102d4e;
+  color:#f7f9fc;
+  box-shadow:0 14px 32px rgba(16,45,78,.12);
+}
 .home-page .feature-row.reverse .feature-media{order:0}
-.home-page .feature-text{max-width:790px}
-.home-page .feature-media{flex-direction:column;align-items:flex-start;justify-content:flex-start}
-.home-page .feature-media .phone-caption{max-width:230px;text-align:left;margin-top:.7em}
-.home-page .feature-media .phone-frame{width:min(230px,60vw)!important}
+.home-page .feature-text{max-width:720px;margin:0 auto;text-align:center}
+.home-page .feature-text .pain{display:inline-block;margin:0 0 .8em;padding:.25em .8em;border-radius:999px;background:rgba(255,255,255,.12);color:#dce8f5;font-size:.82rem;font-weight:700}
+.home-page .feature-text h3{color:#fff;font-size:clamp(1.35rem,3vw,1.8rem)}
+.home-page .feature-text p:not(.pain){color:#e3eaf2}
+.home-page .feature-text .button.ghost{color:#e1ef9a}
+.home-page .feature-media{flex-direction:column;align-items:center;justify-content:flex-start;margin-top:26px}
+.home-page .feature-media .phone-frame{width:min(230px,60vw)!important;margin:0 auto}
+.home-page .feature-media .phone-frame .shell{border:6px solid #f7f9fc;box-shadow:0 18px 36px rgba(0,0,0,.24)}
+.home-page .feature-media .phone-caption{max-width:300px;text-align:center;margin-top:.85em;color:#d2deeb}
 
 /* Concrete, task-based examples on feature guides. */
 .feature-example{padding:clamp(22px,4vw,38px);border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.82)}
@@ -313,11 +332,15 @@ details p{ margin-top: .8em; color: var(--muted); }
 .home-page .section>h2,
 .home-page .section>p:not(.eyebrow){max-width:790px}
 .home-page .notice{max-width:790px}
+.home-page #search,
+.home-page #autofill,
+.home-page #tabs,
+.home-page #profiles{scroll-margin-top:110px}
 
 @media(max-width:680px){
   .home-page .hero{margin-top:16px;padding:30px 22px;border-radius:18px}
   .home-page .hero h1{font-size:clamp(2rem,8vw,2.65rem)}
-  .home-page .feature-row{padding:28px 0}
+  .home-page .feature-row{margin:14px 0 22px;padding:24px 18px;border-radius:20px}
   .home-page .feature-media .phone-frame{width:min(205px,64vw)!important}
   .home-page .profile-screen{width:min(220px,66vw)}
 }
