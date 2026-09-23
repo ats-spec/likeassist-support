@@ -250,3 +250,74 @@ details p{ margin-top: .8em; color: var(--muted); }
   .grid-3, .grid-4{ grid-template-columns: 1fr; }
   .plan-table{ font-size:.85rem; }
 }
+
+/* Homepage refresh: single-column reading flow and a quiet browser-screen backdrop. */
+.home-page .hero{
+  display:block;
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  margin-top:28px;
+  padding:clamp(34px,7vw,76px);
+  border:1px solid rgba(34,38,29,.08);
+  border-radius:24px;
+  background:#edf0e5;
+}
+.home-page .hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background-image:linear-gradient(rgba(245,246,238,.86),rgba(245,246,238,.9)),url("assets/web-search.jpg");
+  background-size:cover;
+  background-position:center 36%;
+  transform:scale(1.02);
+}
+.home-page .hero-copy{max-width:790px;margin:0 auto}
+.home-page .hero h1{max-width:19ch;font-size:clamp(2.1rem,5.2vw,3.7rem);line-height:1.42}
+.home-page .hero .lead{max-width:58ch;font-size:clamp(1rem,1.7vw,1.16rem);line-height:1.95}
+.home-page .status-pill{margin-bottom:0}
+.home-page .related-list{max-width:790px}
+.home-page .feature-row,
+.home-page .feature-row.reverse,
+.home-page .grid-3,
+.home-page .grid-4{
+  grid-template-columns:minmax(0,1fr);
+}
+.home-page .feature-row{gap:22px;padding:38px 0}
+.home-page .feature-row.reverse .feature-media{order:0}
+.home-page .feature-text{max-width:790px}
+.home-page .feature-media{flex-direction:column;align-items:flex-start;justify-content:flex-start}
+.home-page .feature-media .phone-caption{max-width:230px;text-align:left;margin-top:.7em}
+.home-page .feature-media .phone-frame{width:min(230px,60vw)!important}
+
+/* Concrete, task-based examples on feature guides. */
+.feature-example{padding:clamp(22px,4vw,38px);border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.82)}
+.feature-example .section-heading{margin-bottom:22px}
+.example-flow{display:grid;gap:10px;max-width:820px}
+.example-flow p,.example-card{margin:0;padding:18px 20px;border-radius:14px;background:#f3f5ee}
+.example-flow strong{color:var(--indigo)}
+.example-card{border-top:3px solid var(--marker)}
+.example-card h3{margin:0 0 .45em;font-size:1.05rem}
+.example-card p{margin:0;color:var(--muted)}
+.example-note{margin:18px 0 0;color:var(--muted);font-size:.92rem}
+.document .feature-example{margin:30px 0}
+@media(max-width:680px){.feature-example{padding:20px 16px}}
+.home-page .profile-screen{width:min(250px,62vw)}
+.home-page .grid-3{max-width:790px;gap:24px}
+.home-page .section-heading{max-width:790px}
+.home-page .start-steps{grid-template-columns:minmax(0,1fr);max-width:790px;gap:18px}
+.home-page .plan-table{max-width:790px}
+.home-page .plan-note{max-width:790px;margin-left:0}
+.home-page .section>.actions{max-width:790px}
+.home-page .section>h2,
+.home-page .section>p:not(.eyebrow){max-width:790px}
+.home-page .notice{max-width:790px}
+
+@media(max-width:680px){
+  .home-page .hero{margin-top:16px;padding:30px 22px;border-radius:18px}
+  .home-page .hero h1{font-size:clamp(2rem,8vw,2.65rem)}
+  .home-page .feature-row{padding:28px 0}
+  .home-page .feature-media .phone-frame{width:min(205px,64vw)!important}
+  .home-page .profile-screen{width:min(220px,66vw)}
+}

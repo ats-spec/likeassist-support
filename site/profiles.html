@@ -1,15 +1,88 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>サイト設定共有 | LikeAssist</title><meta name="description" content="自分で作った検索サイト設定を保存し、GitHubやファイルから読み込む手順。"><link rel="preconnect" href="https://fonts.googleapis.com">
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>サイト設定の保存・共有方法 | LikeAssist</title>
+  <meta name="description" content="LikeAssistのサイト設定に名前と色を付けて整理し、検索設定をJSONファイルやGitHubから保存・読み込みする方法を説明します。">
+  <link rel="canonical" href="https://ats-spec.github.io/likeassist-support/profiles.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"></head><body><header class="site-header">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&amp;family=Noto+Sans+JP:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html"><span class="brand-mark">L</span>LikeAssist</a>
     <nav aria-label="主要メニュー">
       <a href="kensaku.html">ページ内検索</a>
       <a href="teikeibun.html">定型文・入力</a>
-      <a href="profiles.html">設定を共有</a>
+      <a href="profiles.html" aria-current="page">設定を共有</a>
       <a href="ryokin.html">料金</a>
       <a href="support.html">サポート</a>
     </nav>
   </div>
-</header><main class="document"><p class="eyebrow">PROFILE SHARING</p><h1>自分の設定を、保存・共有。</h1><p class="lead">サイトの検索設定をJSONファイルに書き出し、内容を確認してから別の端末や利用者のLikeAssistへ読み込めます。</p><h2>1. アプリから保存</h2><ol><li>「設定 → サイト・検索設定」で共有したいサイトを選択します。</li><li>「書き出す」を押し、共有内容の注意を確認します。</li><li>端末の共有画面で「ファイルに保存」などを選び、JSONファイルを保存します。</li></ol><p>書き出しには、サイト名、表示色、対象ドメイン、開始URL（クエリとフラグメントを除く）、検索ボタンの表示名・検索文字・有効状態が含まれます。自動入力の登録値、テンプレート、ログイン情報、閲覧履歴、購入情報は含みません。ただし、サイト名、URLのパス、検索文字に個人情報や秘密の文字が含まれていないか、書き出し前に確認してください。</p><h2>2. 自分のGitHubで共有</h2><ol><li>ご自身のGitHubの公開リポジトリを開きます。</li><li>「Add file → Upload files」で保存したJSONを選び、変更を保存します。</li><li>公開したファイルのページURLをコピーして共有します。</li></ol><p>GitHubアカウントへのログイン・ファイル投稿はGitHubで行います。アプリから直接投稿はしません。公開した情報は誰でも閲覧できるため、公開先の管理と削除はご自身で行ってください。</p><h2>3. 確認して読み込む</h2><ol><li>アプリの「設定 → サイト・検索設定 → サイト設定を共有・読み込み」を開きます。</li><li>「保存したJSONファイルを読み込む」、またはGitHub URLを貼り付けて「URLから読み込む」を選びます。</li><li>サイト名・対象ドメイン・開始URL・検索ボタンの内容を確認して保存します。</li></ol><p>同じ対象ドメインのプロファイルが1件だけある場合は、そのプロファイルのサイト名・色・開始URL・検索ボタンを共有ファイルの内容で置き換えます。そのプロファイルに保存したログイン情報、自動入力、最後に開いたURLは残します。同じドメインのプロファイルが複数ある場合は自動で置き換えず、対象を選んで手動で反映します。</p><p>対応するURLはGitHubのファイルページ、raw.githubusercontent.com、GitHub Pagesです。ファイルは64KB以下、対応形式はバージョン1です。読み込んだだけでサイトを開いたり、ボタンを押したり、ログインしたりはしません。</p><h2>練習用サイト設定</h2><p><a class="button primary" href="guide-profile.json" download>使い方ページ用のJSONを保存</a></p><p>アプリのURL読み込み欄には、次のURLをコピーしてください。</p><p style="overflow-wrap:anywhere">https://ats-spec.github.io/likeassist-support/guide-profile.json</p><h2>無料・Proの上限</h2><p>無料は3プロファイル・各1検索ボタン、Proは20プロファイル・各5検索ボタンです。読み込み先の上限も同じです。上限に達している場合は読み込めず、既存のプロファイル数や共有ファイル内の検索ボタン数を調整するか、Proをご検討ください。</p><p><a href="guide.html">使い方へ戻る</a> · <a href="privacy.html">プライバシーポリシー</a></p></main></body></html>
+</header>
+
+<main class="document">
+  <p class="eyebrow">PROFILE SETTINGS</p>
+  <h1>必要なサイト設定を、名前と色で整理。</h1>
+  <p class="lead">プロファイルは必須ではありません。ブックマークのようにURLを保存するだけでなく、サイト設定に名前や色を付け、開始URLや検索ボタンもまとめて管理できます。検索設定はJSONファイルに書き出し、内容を確認してから別の端末や利用者のLikeAssistへ読み込めます。</p>
+
+  <section class="feature-example" aria-labelledby="profile-example-title">
+    <h2 id="profile-example-title">たとえば、仕事用と買い物用を分けたいとき</h2>
+    <p>仕事用・買い物用などは一例です。必要に応じて、よく使うサイト設定に名前と色を付け、開始URLや検索ボタンを整理できます。毎回使う設定だけで十分なら、無理に分ける必要はありません。</p>
+    <p>機種変更や別の端末でも同じ検索設定を使いたい場合は、JSONファイルに書き出して読み込みます。自動同期ではなく、共有する内容を確認してから手動で移します。</p>
+    <p class="example-note">共有されるのはサイト名・色・対象ドメイン・開始URL・検索ボタンの設定です。ログイン情報、自動入力の登録値、テンプレート、閲覧履歴は含まれません。</p>
+  </section>
+
+  <h2>1. アプリから保存</h2>
+  <ol>
+    <li>「設定 → サイト・検索設定」で共有したいサイトを選択します。</li>
+    <li>「書き出す」を押し、共有内容の注意を確認します。</li>
+    <li>端末の共有画面で「ファイルに保存」などを選び、JSONファイルを保存します。</li>
+  </ol>
+  <p>書き出しには、サイト名、表示色、対象ドメイン、開始URL（クエリとフラグメントを除く）、検索ボタンの表示名・検索文字・有効状態が含まれます。自動入力の登録値、テンプレート、ログイン情報、閲覧履歴、購入情報は含みません。ただし、サイト名、URLのパス、検索文字に個人情報や秘密の文字が含まれていないか、書き出し前に確認してください。</p>
+
+  <h2>2. 自分のGitHubで共有</h2>
+  <ol>
+    <li>ご自身のGitHubの公開リポジトリを開きます。</li>
+    <li>「Add file → Upload files」で保存したJSONを選び、変更を保存します。</li>
+    <li>公開したファイルのページURLをコピーして共有します。</li>
+  </ol>
+  <p>GitHubアカウントへのログイン・ファイル投稿はGitHubで行います。アプリから直接投稿はしません。公開した情報は誰でも閲覧できるため、公開先の管理と削除はご自身で行ってください。</p>
+
+  <h2>3. 内容を確認して読み込む</h2>
+  <ol>
+    <li>アプリの「設定 → サイト・検索設定 → サイト設定を共有・読み込み」を開きます。</li>
+    <li>「保存したJSONファイルを読み込む」、またはGitHub URLを貼り付けて「URLから読み込む」を選びます。</li>
+    <li>サイト名・対象ドメイン・開始URL・検索ボタンの内容を確認して保存します。</li>
+  </ol>
+  <p>同じ対象ドメインのプロファイルが1件だけある場合は、そのプロファイルのサイト名・色・開始URL・検索ボタンを共有ファイルの内容で置き換えます。そのプロファイルに保存したログイン情報、自動入力、最後に開いたURLは残します。同じドメインのプロファイルが複数ある場合は自動で置き換えず、対象を選んで手動で反映します。</p>
+  <p>対応するURLはGitHubのファイルページ、raw.githubusercontent.com、GitHub Pagesです。ファイルは64KB以下、対応形式はバージョン1です。読み込んだだけでサイトを開いたり、ボタンを押したり、ログインしたりはしません。</p>
+
+  <h2>練習用サイト設定</h2>
+  <p><a class="button primary" href="guide-profile.json" download>使い方ページ用のJSONを保存</a></p>
+  <p>アプリのURL読み込み欄には、次のURLをコピーしてください。</p>
+  <p style="overflow-wrap:anywhere">https://ats-spec.github.io/likeassist-support/guide-profile.json</p>
+
+  <h2>無料・Proの上限</h2>
+  <p>無料は3プロファイル・各1検索ボタン、Proは20プロファイル・各5検索ボタンです。読み込み先の上限も同じです。上限に達している場合は読み込めず、既存のプロファイル数や共有ファイル内の検索ボタン数を調整するか、Proをご検討ください。</p>
+
+  <p><a href="guide.html">使い方へ戻る</a> · <a href="privacy.html">プライバシーポリシー</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 LikeAssist</p>
+    <nav aria-label="フッターメニュー">
+      <a href="guide.html">使い方</a>
+      <a href="support.html">サポート</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="terms.html">利用規約</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
