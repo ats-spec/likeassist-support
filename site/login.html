@@ -1,36 +1,85 @@
 <!doctype html>
 <html lang="ja">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ログイン・アカウントの使い方 | LikeAssist</title>
-<meta name="description" content="1プロファイル1ログイン環境の作成・切替・移行とパスワード保護を説明します。">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ブラウザプロファイルとログイン情報 | LikeAssist</title>
+<meta name="description" content="LikeAssistのブラウザプロファイルでログイン環境を分ける方法と、保存したID・パスワードの確認・コピー・移動方法を説明します。">
+<link rel="canonical" href="https://ats-spec.github.io/likeassist-support/login.html">
 <link rel="stylesheet" href="style.css">
-<style>.login-diagram{margin:1.5rem 0}.login-diagram img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}.login-diagram figcaption{margin:.7rem auto;color:#566274;font-size:.9rem;max-width:640px}.diagram-caption{font-weight:700}</style>
-<style>.login-guide section{margin:2.5rem 0}.login-guide li{margin:.8rem 0}.login-choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1rem}.login-card{padding:1.2rem;border:1px solid var(--line,#ddd);border-radius:16px;background:#fffaf4}.login-guide details{padding:1rem 0;border-bottom:1px solid #ddd}.login-guide summary{cursor:pointer;font-weight:700}.login-guide a{overflow-wrap:anywhere}</style>
-</head><body>
+<style>
+.login-guide section{margin:2.5rem 0}.login-guide li{margin:.7rem 0}.login-guide .login-diagram{margin:1.5rem 0}.login-guide .login-diagram img{display:block;width:min(100%,380px);height:auto;margin:auto;border:7px solid #202a39;border-radius:28px;box-shadow:0 16px 34px rgba(16,45,78,.18)}.login-guide .login-diagram figcaption{margin:.7rem auto;color:var(--muted);font-size:.9rem;text-align:center}.login-guide .login-note{padding:1rem 1.2rem;border-radius:14px;background:#f0f3fa}
+</style>
+</head>
+<body>
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html"><span class="brand-mark">L</span>LikeAssist</a>
     <nav aria-label="主要メニュー">
       <a href="kensaku.html">ページ内検索</a>
       <a href="teikeibun.html">定型文・入力</a>
-      <a href="profiles.html">設定を共有</a>
+      <a href="profiles.html">検索設定の共有</a>
       <a href="ryokin.html">料金</a>
       <a href="support.html">サポート</a>
     </nav>
   </div>
 </header>
 <main class="document login-guide">
-<p class="eyebrow">PROFILE GUIDE</p><h1>選ぶのは、プロファイルだけ。</h1>
-<p class="lead">通常は、使いたいサイトの設定を1つ作れば十分です。同じサイトでログイン環境を分けたい場合だけ、サイト設定（プロファイル）を追加します。以下はその場合の例です。「私用」「仕事用」など名前は自由で、決まった名前やGoogle専用の設定は必要ありません。</p>
-<section><h2>1プロファイル＝1つのログイン環境</h2><div class="login-choices">
-<div class="login-card"><h3>例：あるサイトを1つの環境で使う</h3><p>プロファイル名は自由に設定</p><p>この環境用の検索・自動入力設定</p><p>このプロファイルのタブ同士はログインを共有</p></div>
-<div class="login-card"><h3>追加する例：同じサイトでログインを分ける</h3><p>必要な人だけ、もう1つプロファイルを作成</p><p>名前は自由。「私用」「仕事用」など</p><p>1つ目のプロファイルとはログインを分離</p></div></div>
-<p>プロファイル名と色は、設定を見分けるための目印です。Webサイト内で別の利用者にログインし直す操作までは制限しません。送信や申込みの前に、サイト上でログイン中の利用者を確認してください。</p></section>
-<section id="switch"><h2>作成と切替</h2><ol><li>1つのログイン環境だけでよい場合は、サイト設定を追加する必要はありません。</li><li>同じサイトでログイン環境を分けたい場合だけ、「☰ → 設定 → サイト・検索」から「サイト設定を追加」を選びます。</li><li>分けたいサイトのURLを登録し、見分けやすい名前を付けます。例と同じ名前にする必要はありません。</li><li>「☰ → プロファイルを開く」で使う設定を選びます。プロファイルを開くときに、別途アカウントを選ぶ画面はありません。</li><li>新しいプロファイルを開いたら、初回はその環境で使うアカウントにWebサイト上でログインします。LikeAssistがログインボタンを押したり、フォームを送信したりすることはありません。</li></ol><p>入力途中のページから切り替えるときは確認が表示されます。キャンセルすれば、現在のページに戻ります。</p></section>
-<section><h2>旧設定はどうなる？</h2><p>以前の複数アカウントは、専用の保存先IDを維持して独立したプロファイルに分けます。タブ・お気に入り・履歴の対応も移します。元の通常ブラウザ用設定は残り、ログインを共有します。</p><p>旧設定に保存したID・パスワードは、元のプロファイルに残します。分割先へ自動コピーしません。プロファイル数が上限を超えても削除せず、設定から「利用枠の先頭へ移動」して使用対象を選べます。</p><p>既存の共有プロファイルを分離する場合は、設定内の「ログイン・パスワード → ログインを分離して使う」を選びます。通常ブラウザのログインはコピーせず、入力中のタブは閉じます。確認後に実行し、サイトでログインし直してください。</p></section>
-<section><h2>保存したアカウントをログイン欄に入力する</h2><p>ID・メールアドレス欄またはパスワード欄をタップすると、使用中のプロファイルに保存したアカウントを選べます。手順は「アカウントを選ぶ → Face ID、Touch IDまたは端末パスコードで本人確認 → 空欄に入力」です。入力内容を確認してから、サイトのログインボタンをご自身で押してください。Appleの「パスワード」の候補とは別の機能です。</p><ol><li>操作メニューの「このサイトの保存ID・パスワード」を開き、本人確認します。</li><li>「編集する」から、アカウント名・ID・パスワードを登録し、保存します。</li><li>通常はプロファイルのドメインを入力先に使います。Googleの google.com／www.google.com は accounts.google.com にも対応します。</li><li>ほかのログイン先を使う場合だけ、保存情報にそのホスト名を指定します。共通設定では、各保存情報にログイン先を指定してください。</li><li>Webページへ戻り、ログイン欄をタップして、使うアカウントを選びます。</li></ol><p>以前から登録した情報が候補に表示されない場合は、「このサイトの保存ID・パスワード」を本人確認して一度開いてください。共通設定では、保存情報ごとにログイン先も登録してください。本人確認前に表示されるのは、候補を選ぶためのアカウント名とログイン先です。ID・パスワードは、選択後に本人確認が終わってから入力されます。</p><p>入力済みの欄は上書きしません。別アカウントのIDが入っている場合は、IDを消してから選び直してください。IDとパスワードを別ページで入力するサイトでは、それぞれの欄で同じアカウントを選びます。特殊な入力欄や埋め込み画面では使えない場合があるため、その場合はコピー・貼り付けをお試しください。</p><p>保存情報の閲覧・編集にも端末認証が必要です。アプリを離れるとロックし、未保存の編集は破棄されます。基本自動入力は共通情報を使うか、プロファイル専用の情報を登録するか選べます。プロファイルの複製や共有には、ログイン情報や専用の自動入力情報は含まれません。</p></section>
-<section><h2>無料とPro</h2><p>無料は3プロファイル、Proは20プロファイル。同じサイトでログイン環境を2つに分ける場合は、プロファイル枠を2件使います。動作中のタブは無料3つ・Pro5つ。お気に入り・最近閉じたタブから必要なページを開き直せます。復元するのはURLと使用プロファイルで、入力内容は復元しません。</p></section>
-<p><a class="button primary" href="guide.html">練習ページへ</a></p></main><footer class="site-footer">
+  <p class="eyebrow">BROWSER PROFILES</p>
+  <h1>閲覧環境をプロファイルで分ける。</h1>
+  <p class="lead">ブラウザプロファイルは、ログイン状態やタブを分けて管理するための区分です。作成は必須ではありません。環境を分けたいときだけ追加してください。</p>
+
+  <section>
+    <h2>プロファイルごとに分かれるもの</h2>
+    <p>同じブラウザプロファイルで開いたタブは、Webサイトのログイン状態を共有します。別のブラウザプロファイルを選ぶと、そのログイン状態とタブを分けて使えます。プロファイル名は自由に付けられます。「仕事」「個人」などは名前の例で、特定の名前やサイトの登録は必要ありません。</p>
+    <figure class="login-diagram"><img src="assets/store-source-profiles.png" alt="LikeAssistのブラウザプロファイルと入力設定の画面"><figcaption>設定画面の一例。プロファイル名は用途に合わせて変更できます。</figcaption></figure>
+    <p class="login-note">ブラウザプロファイルの名前や色は、アプリ内で見分けるためのものです。Webサイト上でログイン中のアカウントを確認し、送信・購入・申込みの前に内容をご自身で確かめてください。</p>
+  </section>
+
+  <section>
+    <h2>タブ・履歴・お気に入りの扱い</h2>
+    <ul>
+      <li>タブを復元すると、開いていたURLとブラウザプロファイルを引き継ぎます。フォームへの入力内容は復元しません。</li>
+      <li>閲覧履歴とお気に入りは、ブラウザプロファイル間で共通です。</li>
+      <li>履歴からページを開くときは、履歴に記録されたプロファイルではなく、現在選択しているプロファイルで新しく開きます。</li>
+      <li>検索設定・自動入力ルール・テンプレートは、ブラウザプロファイルごとに使い分けられます。サイト別の検索設定は、ログイン環境を分ける機能とは別です。</li>
+    </ul>
+  </section>
+
+  <section id="switch">
+    <h2>プロファイルを切り替える</h2>
+    <ol>
+      <li>ブラウザ画面の操作メニューを開き、「プロファイルを開く」を選びます。</li>
+      <li>一覧から使いたいブラウザプロファイルを選択します。</li>
+      <li>初めて使うプロファイルでは、対象のWebサイトを開いて必要なアカウントにログインします。</li>
+    </ol>
+    <p>LikeAssistがログインボタンを押したり、フォームを送信したりすることはありません。サイトへのログイン操作はご自身で行います。</p>
+    <p>同じサイトでログイン環境を分けたい場合は、別のブラウザプロファイルを作成します。サイトごとの検索文字や検索ボタンを登録する「サイト設定」とは役割が異なります。</p>
+  </section>
+
+  <section id="saved-accounts">
+    <h2>保存したID・パスワードをまとめて管理</h2>
+    <p>「設定 → 保存ID・パスワード」では、どのWebサイトの情報がどのブラウザプロファイルに保存されているかを一覧で確認できます。必要な情報は別のプロファイルへコピーまたは移動できます。設定共有用のJSONファイルにはログイン情報を含めません。</p>
+    <h3>ログイン画面で使う</h3>
+    <p>保存情報があるサイトのID欄またはパスワード欄をタップして、使うアカウントを選びます。端末で本人確認した後に入力されます。該当する保存情報がない場合は、保存情報を使う案内を表示しません。入力内容を確かめてから、Webサイトのログインボタンをご自身で押してください。</p>
+    <ol>
+      <li>「設定 → 保存ID・パスワード」で、保存先のプロファイルとアカウントを確認します。</li>
+      <li>ログインページに戻り、ID欄またはパスワード欄をタップします。</li>
+      <li>使うアカウントを選び、Face ID、Touch IDまたは端末パスコードで本人確認します。</li>
+      <li>入力された値を確認し、サイト上でログインします。</li>
+    </ol>
+    <p>新規登録や別アカウントの追加では、端末認証を求めません。同じID・パスワードがすでに保存されている場合は重複確認を省きます。保存済み情報を変更するときは、端末での本人確認が必要です。Appleの「パスワード」機能とは別のアプリ内機能です。</p>
+    <p>保存情報の利用案内をキャンセルすると、そのページを再読み込みするまでは同じ欄で案内を繰り返しません。キャンセル後に手入力してログインした場合、ログインを検知できると保存するか確認します。</p>
+  </section>
+
+  <section>
+    <h2>ブラウザプロファイルの上限</h2>
+    <p>無料プランでは3件、LikeAssist Proでは20件まで作成できます。用途を分ける必要がなければ、初期設定のプロファイルだけで利用できます。</p>
+  </section>
+
+  <p><a class="button primary" href="index.html#profiles">機能紹介へ戻る</a> <a href="privacy.html">プライバシーポリシー</a></p>
+</main>
+<footer class="site-footer">
   <div class="wrap">
     <p>© 2026 LikeAssist</p>
     <nav aria-label="フッターメニュー">
@@ -40,4 +89,6 @@
       <a href="terms.html">利用規約</a>
     </nav>
   </div>
-</footer></body></html>
+</footer>
+</body>
+</html>

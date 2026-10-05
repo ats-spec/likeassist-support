@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>サイト設定の保存・共有方法 | LikeAssist</title>
-  <meta name="description" content="LikeAssistのサイト設定に名前と色を付けて整理し、検索設定をJSONファイルやGitHubから保存・読み込みする方法を説明します。">
+  <title>サイト別の検索設定を保存・共有する | LikeAssist</title>
+  <meta name="description" content="LikeAssistでサイトごとの検索ボタンを設定し、JSONファイルやGitHubから保存・読み込みする方法を説明します。ブラウザプロファイルとは別の機能です。">
   <link rel="canonical" href="https://ats-spec.github.io/likeassist-support/profiles.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
     <nav aria-label="主要メニュー">
       <a href="kensaku.html">ページ内検索</a>
       <a href="teikeibun.html">定型文・入力</a>
-      <a href="profiles.html" aria-current="page">設定を共有</a>
+      <a href="profiles.html" aria-current="page">検索設定の共有</a>
       <a href="ryokin.html">料金</a>
       <a href="support.html">サポート</a>
     </nav>
@@ -26,15 +26,16 @@
 </header>
 
 <main class="document">
-  <p class="eyebrow">PROFILE SETTINGS</p>
-  <h1>使いたいサイト設定へ、メニューからすばやく切り替え。</h1>
-  <p class="lead">よく使うサイト設定に名前や色を付けておくと、操作メニューの「プロファイルを開く」から選べます。開始URLや検索ボタンも設定ごとに管理できるため、使うサイトに合わせて切り替えやすくなります。プロファイルは必須ではなく、必要なければ1つの設定のまま使えます。</p>
+  <p class="eyebrow">SITE SEARCH SETTINGS</p>
+  <h1>サイトごとの検索ボタンを保存して、次回も使う。</h1>
+  <p class="lead">検索する文字やボタンの表示名をサイトごとに登録できます。ここでいう「サイト設定」は検索機能の設定です。ログイン状態を分ける「ブラウザプロファイル」とは別の機能です。</p>
 
   <section class="feature-example" aria-labelledby="profile-example-title">
-    <h2 id="profile-example-title">使うサイト設定を、メニューから選び直す</h2>
-    <p>たとえば、仕事用と買い物用など、使うサイト設定を分けて登録しておけば、「☰ → プロファイルを開く」から目的の設定を選べます。設定に付けた名前と色が目印になり、開始URLや検索ボタンも選んだ設定に合わせて使えます。仕事用・買い物用はあくまで例です。設定を分ける必要がなければ、1つのままで使えます。</p>
-    <p>機種変更や別の端末でも同じ検索設定を使いたい場合は、JSONファイルに書き出して読み込みます。自動同期ではなく、共有する内容を確認してから手動で移します。</p>
-    <p class="example-note">共有されるのはサイト名・色・対象ドメイン・開始URL・検索ボタンの設定です。ログイン情報、自動入力の登録値、テンプレート、閲覧履歴は含まれません。</p>
+    <h2 id="profile-example-title">検索したい文字を、サイト設定に登録</h2>
+    <p>サイト名、対象ドメイン、開始URL、検索ボタンをまとめて登録します。ページ内検索で使うボタンの表示名や検索文字を設定しておけば、次回も同じ設定を利用できます。</p>
+    <figure class="profile-example-image"><img src="assets/store-source-search.png" alt="LikeAssistのサイト・検索設定画面"><figcaption>実際の画面例：サイトと検索ボタンの設定</figcaption></figure>
+    <p>設定を別の端末へ移すときは、JSONファイルに書き出して読み込みます。自動同期ではなく、共有する内容を確認して手動で移します。</p>
+    <p class="example-note">共有ファイルに含まれるのはサイト名・色・対象ドメイン・開始URL・検索ボタンの設定です。ログイン情報、自動入力の登録値、テンプレート、閲覧履歴は含まれません。</p>
   </section>
 
   <h2>1. アプリから保存</h2>
@@ -53,18 +54,23 @@
   </ol>
   <p>GitHubアカウントへのログイン・ファイル投稿はGitHubで行います。アプリから直接投稿はしません。公開した情報は誰でも閲覧できるため、公開先の管理と削除はご自身で行ってください。</p>
 
-  <h2>3. 内容を確認して読み込む</h2>
+  <h2>3. JSONページから取り込む</h2>
   <ol>
-    <li>アプリの「設定 → サイト・検索設定 → サイト設定を共有・読み込み」を開きます。</li>
-    <li>「保存したJSONファイルを読み込む」、またはGitHub URLを貼り付けて「URLから読み込む」を選びます。</li>
-    <li>サイト名・対象ドメイン・開始URL・検索ボタンの内容を確認して保存します。</li>
+    <li>共有されたJSONのURLをコピーし、LikeAssistのブラウザで開きます。</li>
+    <li>ファイルを確認できると、アドレス欄付近に「取り込む」ボタンが表示されます。ボタンを押し、サイト名・対象ドメイン・開始URL・検索ボタンを確認します。</li>
+    <li>取り込み先のブラウザプロファイルを選び、「確認して保存」を押します。登録済みのプロファイルを選べます。新しいプロファイルを作成できるのはiOS 17以降です。</li>
   </ol>
-  <p>同じ対象ドメインのプロファイルが1件だけある場合は、そのプロファイルのサイト名・色・開始URL・検索ボタンを共有ファイルの内容で置き換えます。そのプロファイルに保存したログイン情報、自動入力、最後に開いたURLは残します。同じドメインのプロファイルが複数ある場合は自動で置き換えず、対象を選んで手動で反映します。</p>
-  <p>対応するURLはGitHubのファイルページ、raw.githubusercontent.com、GitHub Pagesです。ファイルは64KB以下、対応形式はバージョン1です。読み込んだだけでサイトを開いたり、ボタンを押したり、ログインしたりはしません。</p>
+  <p><strong>ブラウザプロファイルは、LikeAssistの中でログイン状態を分けて使うための設定です。</strong>JSONに入っているのは検索設定だけで、ログイン情報は含まれません。</p>
+  <p><strong>登録済みのブラウザプロファイルを選ぶ場合：</strong>そのプロファイルのポケパラ用検索設定を更新します。ログイン状態や保存済みのID・パスワード、自動入力設定はそのまま残ります。同じドメインの設定が複数ある場合は、誤って上書きしないよう自動では取り込みません。</p>
+  <p><strong>新しいブラウザプロファイルを作成する場合：</strong>ログイン状態は引き継がれません。新しいプロファイルでポケパラにもう一度ログインしてください。新規作成はiOS 17以降で利用できます。</p>
+  <p>取り込みボタンは、対応するGitHubのファイルページ、raw.githubusercontent.com、GitHub PagesのJSON URLで、ファイルを確認できた場合に表示されます。ファイルは64KB以下・形式バージョン1に対応しています。対応形式でない場合や取得できない場合は保存できません。取り込み後も、Webサイトを開いたり、ボタンを押したり、ログインしたりはしません。</p>
+
+  <h3>設定画面から読み込む方法</h3>
+  <p>JSONページをLikeAssist内で開けない場合は、「設定 → サイト・検索設定 → サイト設定を共有・読み込み」から、「保存したJSONファイルを読み込む」またはURLを貼り付けて「入力したURLから読み込む」を選べます。URL欄の内容だけを読み込み、ブラウザで開いている別のURLは使いません。読み込み後は内容と取り込み先を確認して保存してください。</p>
 
   <h2>練習用サイト設定</h2>
   <p><a class="button primary" href="guide-profile.json" download>使い方ページ用のJSONを保存</a></p>
-  <p>アプリのURL読み込み欄には、次のURLをコピーしてください。</p>
+  <p>JSONページから試す場合は、次のURLをコピーしてLikeAssistのブラウザで開いてください。</p>
   <p style="overflow-wrap:anywhere">https://ats-spec.github.io/likeassist-support/guide-profile.json</p>
 
   <h2>無料・Proの上限</h2>
