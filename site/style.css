@@ -350,6 +350,12 @@ details p{ margin-top: .8em; color: var(--muted); }
 .home-page #tabs,
 .home-page #profiles{scroll-margin-top:110px}
 
+.overview-video{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.overview-video .section-heading{margin-left:auto;margin-right:auto;text-align:center}
+.overview-video-player{width:min(360px,100%);margin:0 auto;text-align:center}
+.overview-video-player video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:contain;border-radius:18px;background:#eee6dc;box-shadow:0 16px 38px rgba(16,45,78,.16)}
+.overview-video-player p{margin:14px 0 0;color:var(--muted);font-size:.9rem;line-height:1.7}
+
 @media(max-width:680px){
   .home-page .hero{margin-top:16px;padding:30px 22px;border-radius:18px}
   .home-page .hero h1{font-size:clamp(2rem,8vw,2.65rem)}
