@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>iPhoneの定型文入力アプリ｜LikeAssistの自由入力ルール</title>
-<meta name="description" content="LikeAssistの自由入力ルールは、入力欄の目印となる文字と入れたい内容を登録し、Webフォームへの入力を支援する機能です。完全一致／含む、対象ドメイン、有効／無効を設定できます。">
+<meta name="description" content="LikeAssistの自由入力ルールは、入力欄の目印となる文字と入れたい内容を登録し、Webフォームへの入力を支援する機能です。完全一致／含む、有効／無効を設定できます。">
 <link rel="canonical" href="https://ats-spec.github.io/likeassist-support/teikeibun.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iPhoneの定型文入力アプリ｜LikeAssistの自由入力ルール">
@@ -13,7 +13,7 @@
 <meta property="og:image" content="https://ats-spec.github.io/likeassist-support/assets/custom-autofill.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script type="application/ld+json">
 {
@@ -57,7 +57,7 @@
     </div>
     <div class="hero-visual">
       <div class="phone-frame">
-        <div class="shell"><img src="assets/custom-autofill.jpg" alt="自由入力ルールの設定画面。入力欄のワード、内容、対象サイトを設定できる" width="1284" height="2778"></div>
+        <div class="shell"><img src="assets/custom-autofill.jpg" alt="自由入力ルールの設定画面。入力欄のワード、内容、入力欄の目印や照合方法を設定できる" width="1284" height="2778"></div>
       </div>
       <p class="phone-caption">実際のアプリ画面・自由入力ルールの設定例</p>
     </div>
@@ -72,7 +72,7 @@
       <div class="step"><span>目印</span><h3>入力欄を見分ける</h3><p>入力欄のラベルなどに含まれる文字を使って、対象の欄を判定します。</p></div>
       <div class="step"><span>内容</span><h3>入力する文章</h3><p>会社名など、その欄に入力したい内容を登録します。</p></div>
       <div class="step"><span>条件</span><h3>完全一致／含む</h3><p>目印の文字と入力欄側の文字を、完全一致で比べるか、一部が含まれているかで比べるかを選べます。</p></div>
-      <div class="step"><span>範囲</span><h3>対象ドメイン</h3><p>ドメインを指定すると、そのドメインのHTTPSページだけで候補を判定します。空欄の場合は、LikeAssistで開いたHTTPSページが対象です。実際に入力するのは「自動入力」を押したときだけです。複数のサイトで共通して使う内容だけを登録してください。</p></div>
+      <div class="step"><span>範囲</span><h3>HTTPSページの入力欄</h3><p>HTTPSページ上の入力欄を目印で判定します。特定ドメインに限定する設定はありません。実際に入力するのは「自動入力」を押したときだけです。入力先と内容を確認してからお使いください。</p></div>
     </div>
   </section>
 
@@ -83,7 +83,7 @@
       <p>同じ入力支援でも、欄に合わせて自動入力する内容と、自分で選んで挿入する文章を分けて登録できます。</p>
     </div>
     <div class="grid-3">
-      <div class="example-card"><h3>会社名など、欄ごとに決まった内容</h3><p>「会社名」のような入力欄の目印と入れたい内容を自由入力ルールに登録します。対象ドメインも指定できます。空欄に限り、自動入力ボタンを押したときに入力します。</p></div>
+      <div class="example-card"><h3>会社名など、欄ごとに決まった内容</h3><p>「会社名」のような入力欄の目印と入れたい内容を自由入力ルールに登録します。特定ドメインに限定する設定はありません。空欄に限り、自動入力ボタンを押したときに入力します。</p></div>
       <div class="example-card"><h3>問い合わせで使う、決まった文章</h3><p>挨拶や案内文をテンプレートに登録します。入力欄をタップして一覧から選ぶと、カーソル位置に挿入されます。必要な部分を編集してから送信できます。</p></div>
       <div class="example-card"><h3>送信前に内容を確認</h3><p>入力済みの欄は上書きせず、フォームも自動送信しません。入力内容を確認し、送信するかどうかはご自身で判断できます。</p></div>
     </div>
@@ -107,12 +107,12 @@
     <table class="plan-table">
       <thead><tr><th>項目</th><th>無料</th><th class="pro">Pro</th></tr></thead>
       <tbody>
-        <tr><td>自由入力ルール</td><td>1枠</td><td class="pro">合計5枠</td></tr>
+        <tr><td>自由入力ルール（プロファイルごと）</td><td>有効1件を選択</td><td class="pro">無制限</td></tr>
         <tr><td>基本の自動入力（氏名・住所など）</td><td colspan="2" class="pro">両プランで利用可</td></tr>
         <tr><td>テンプレート</td><td colspan="2" class="pro">両プランで利用可</td></tr>
       </tbody>
     </table>
-    <p class="plan-note">Proの利用期間が終了しても追加設定の内容は端末内に残り、無料で使う1枠を選べます。複数のルールが一致した場合は、利用者が入れる内容を選びます。</p>
+    <p class="plan-note">Proの利用期間が終了しても設定は端末内に残ります。無料では有効にする1件を選択できます。複数のルールが一致した場合は、入力前に候補から内容を選びます。</p>
   </section>
 
   <section class="section wrap">
@@ -141,3 +141,4 @@
 
 </body>
 </html>
+

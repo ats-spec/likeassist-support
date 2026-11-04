@@ -29,7 +29,7 @@ body{
 }
 
 h1,h2,h3,h4{
-  font-family: "Zen Maru Gothic", "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   color: var(--ink);
   line-height: 1.45;
   margin: 0 0 .6em;
@@ -72,7 +72,7 @@ img{ max-width:100%; display:block; }
 }
 .brand{
   display:flex; align-items:center; gap:.5em;
-  font-family:"Zen Maru Gothic", sans-serif; font-weight:900; font-size:1.2rem;
+  font-family:"Noto Sans JP", sans-serif; font-weight:900; font-size:1.2rem;
   color: var(--ink); text-decoration:none;
 }
 .brand-mark{
@@ -164,7 +164,7 @@ img{ max-width:100%; display:block; }
 .grid-4{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 
 .step{ border-top: 3px solid var(--indigo); padding-top: 1em; }
-.step span{ font-family:"Zen Maru Gothic",sans-serif; font-weight:900; color: var(--muted); font-size:.9rem; }
+.step span{ font-family:"Noto Sans JP",sans-serif; font-weight:900; color: var(--muted); font-size:.9rem; }
 .step h3{ font-size:1.1rem; margin-top:.2em; }
 
 .safety-item{ border-top: 3px solid var(--marker); padding-top: 1em; }
@@ -177,7 +177,7 @@ img{ max-width:100%; display:block; }
   font-size:.95rem; vertical-align: top;
 }
 .plan-table thead th{
-  font-family:"Zen Maru Gothic",sans-serif; font-size:1rem;
+  font-family:"Noto Sans JP",sans-serif; font-size:1rem;
   border-bottom: 2px solid var(--ink);
 }
 .plan-table td.pro, .plan-table th.pro{ background: rgba(215,232,105,.28); }
@@ -350,12 +350,6 @@ details p{ margin-top: .8em; color: var(--muted); }
 .home-page #tabs,
 .home-page #profiles{scroll-margin-top:110px}
 
-.overview-video{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.overview-video .section-heading{margin-left:auto;margin-right:auto;text-align:center}
-.overview-video-player{width:min(360px,100%);margin:0 auto;text-align:center}
-.overview-video-player video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:contain;border-radius:18px;background:#eee6dc;box-shadow:0 16px 38px rgba(16,45,78,.16)}
-.overview-video-player p{margin:14px 0 0;color:var(--muted);font-size:.9rem;line-height:1.7}
-
 @media(max-width:680px){
   .home-page .hero{margin-top:16px;padding:30px 22px;border-radius:18px}
   .home-page .hero h1{font-size:clamp(2rem,8vw,2.65rem)}
@@ -366,3 +360,4 @@ details p{ margin-top: .8em; color: var(--muted); }
   .home-page .feature-media .phone-frame{width:min(205px,64vw)!important}
   .home-page .profile-screen{width:min(220px,66vw)}
 }
+
