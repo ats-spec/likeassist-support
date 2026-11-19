@@ -1,28 +1,28 @@
 [
   {
     "author": "The EasyList authors",
-    "bytes": 2116248,
-    "commit": "0e45fba4ef30f18bcd36f78740456f89a7aa9d7a",
+    "bytes": 2057808,
+    "commit": "047efca55038788775a99c0233d3ad8462754e12",
     "file": "easylist.txt",
     "homepage": "https://easylist.to/",
     "license": "CC-BY-SA-3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "name": "EasyList",
-    "sha256": "2fe332f5d1508dfd5ee04f72d5a78a547d73cdd0f5f1287a83971f55c3c61db5",
+    "sha256": "d8e4706b5d1a3126936cf0e9c52455755303f199e8e52ec4fb6cb7372364228f",
     "url": "https://easylist.to/easylist/easylist.txt",
-    "version": "202610081225"
+    "version": "202611190546"
   },
   {
     "author": "The EasyList authors",
-    "bytes": 1508072,
-    "commit": "0e45fba4ef30f18bcd36f78740456f89a7aa9d7a",
+    "bytes": 1519546,
+    "commit": "cb93fe064c65f344579347da5e27e6844b1df528",
     "file": "easyprivacy.txt",
     "homepage": "https://easylist.to/",
     "license": "CC-BY-SA-3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "name": "EasyPrivacy",
-    "sha256": "7effe18b6298f39be5b34854474e1a806f93e6f4fbd77ed5a5d1234b74325eca",
+    "sha256": "00eae4c20fe5607f1739e605519b20be99eb7506a1db1e2a376963cdb7590734",
     "url": "https://easylist.to/easylist/easyprivacy.txt",
-    "version": "202610081225"
+    "version": "202611190554"
   }
 ]
